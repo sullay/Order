@@ -1,0 +1,87 @@
+
+.app{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+.restaurantList{
+  background: #f6f8fa;
+  width: 750rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.restaurant{
+  width: 330rpx;
+  height: 200rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20rpx;
+  border-radius: 10rpx;
+  border: 3rpx solid #F80;
+  animation: namemf 1s linear infinite alternate;
+  -webkit-animation:namemf 3s linear infinite alternate;
+  background: #f2f8fe;
+}
+@-webkit-keyframes namemf{
+from{
+    border: 3rpx solid #F80;
+}
+to{
+    border:3rpx solid #2ED;
+}
+}
+@keyframes namemf{
+from{
+    border: 3rpx solid #F80;
+}
+to{
+    border:3rpx solid #2ED;
+}
+}
+.active{
+  background: -webkit-gradient(linear, left bottom, left top, from(#FEAC5E), to(#4BC0C8));
+  background: -o-linear-gradient(bottom, #FEAC5E, #4BC0C8);
+  background: linear-gradient(to top, #FEAC5E, #4BC0C8);
+}
+button{
+  background:-webkit-gradient(linear, left bottom, left top, from(#FEAC5E), to(#4BC0C8));
+  background:-o-linear-gradient(bottom, #FEAC5E, #4BC0C8);
+  background:linear-gradient(to top, #FEAC5E, #4BC0C8);
+  width: 710rpx;
+  margin: 20rpx;
+}
+

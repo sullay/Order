@@ -1,0 +1,1 @@
+<view class="app" bind:__l="__l"><view class="restaurantList"><block wx:for="{{restaurantList}}" wx:for-item="item" wx:for-index="index" wx:key="*this"><view class="{{[index==selected?'restaurant active':'restaurant']}}">{{item}}</view></block></view><button data-event-opts="{{[['tap',[['_run',['$event']]]]]}}" bindtap="__e">点餐</button></view>
