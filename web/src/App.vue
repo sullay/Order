@@ -22,7 +22,8 @@
 export default {
   data () {
     return {
-      restaurantList: ['腌面', '兰州', '汤饭', '华莱士(假)', '炒菜', '好奇', '楚涛', '金伟'],
+      // restaurantList: ['腌面', '兰州', '汤饭', '华莱士(假)', '炒菜', '好奇', '楚涛', '金伟'],
+      restaurantList: ['外卖', '出去吃', '外卖', '出去吃', '外卖', '出去吃', '外卖', '出去吃'],
       selected: 0,
       isActive: false
     }

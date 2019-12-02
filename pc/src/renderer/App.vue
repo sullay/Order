@@ -1,17 +1,16 @@
 <template>
   <div id="app" class="app">
     <div class="restaurantList">
-      <!-- <div v-for="(item,index) in restaurantList" :key="item" :class="active(index)">{{item}}</div> -->
       <div class="top">
-        <div v-for="(item,index) in topData" :key="index" :class="active('top',index)">{{item}}</div>
+        <div v-for="(item,index) in topData" :key="'t'+index" :class="active('top',index)">{{item}}</div>
       </div>
       <div class="middle">
-        <div v-for="(item,index) in leftData" :key="index" :class="active('left',index)">{{item}}</div>
+        <div v-for="(item,index) in leftData" :key="'l'+index" :class="active('left',index)">{{item}}</div>
         <div class="run_btn"><div @click="_run">启动</div></div>
-        <div v-for="(item,index) in rightData" :key="index" :class="active('right',index)">{{item}}</div>
+        <div v-for="(item,index) in rightData" :key="'r'+index" :class="active('right',index)">{{item}}</div>
       </div>
       <div class="bottom">
-        <div v-for="(item,index) in bottomData" :key="index" :class="active('bottom',index)">{{item}}</div>
+        <div v-for="(item,index) in bottomData" :key="'b'+index" :class="active('bottom',index)">{{item}}</div>
       </div>
     </div>
   </div>

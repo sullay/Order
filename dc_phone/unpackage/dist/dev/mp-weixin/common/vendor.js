@@ -1,292 +1,6 @@
-(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],{
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/config/fileConfig.js":
-/*!************************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/config/fileConfig.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // const baseUrl = 'http://39.98.184.99/static/pictures/htd'
-var baseUrl = 'http://39.98.184.99/static';var _default =
-{
-  baseUrl: baseUrl };exports.default = _default;
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/config/httpConfig.js":
-/*!************************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/config/httpConfig.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var baseUrl = 'http://192.168.0.125:8080';var _default =
-{
-  baseUrl: baseUrl };exports.default = _default;
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/config/index.js":
-/*!*******************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/config/index.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _httpConfig = _interopRequireDefault(__webpack_require__(/*! ./httpConfig */ "../../../Users/11815/Documents/sullayxxx/faceTest/config/httpConfig.js"));
-var _wsConf = _interopRequireDefault(__webpack_require__(/*! ./wsConf */ "../../../Users/11815/Documents/sullayxxx/faceTest/config/wsConf.js"));
-var _fileConfig = _interopRequireDefault(__webpack_require__(/*! ./fileConfig.js */ "../../../Users/11815/Documents/sullayxxx/faceTest/config/fileConfig.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
-
-{
-  httpConfig: _httpConfig.default,
-  wsConf: _wsConf.default,
-  fileConfig: _fileConfig.default };exports.default = _default;
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/config/wsConf.js":
-/*!********************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/config/wsConf.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var baseUrl = 'ws://192.168.0.117:7022/web?';var _default =
-
-{
-  baseUrl: baseUrl };exports.default = _default;
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/main.js":
-/*!***********************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/main.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../Users/11815/Documents/sullayxxx/faceTest/pages.json");
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../Users/11815/Documents/sullayxxx/faceTest/App.vue"));
-var _store = _interopRequireDefault(__webpack_require__(/*! ./store */ "../../../Users/11815/Documents/sullayxxx/faceTest/store/index.js"));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ "../../../Users/11815/Documents/sullayxxx/faceTest/config/index.js"));
-var _service = _interopRequireDefault(__webpack_require__(/*! ./service */ "../../../Users/11815/Documents/sullayxxx/faceTest/service/index.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
-_vue.default.prototype.$store = _store.default;
-_vue.default.prototype.$api = _service.default;
-_vue.default.prototype.baseUrl = _config.default.httpConfig.baseUrl;
-_vue.default.prototype.wsUrl = _config.default.wsConf.baseUrl;
-_vue.default.prototype.fileUrl = _config.default.fileConfig.baseUrl;
-_vue.default.config.productionTip = false;
-_App.default.mpType = 'app';
-var app = new _vue.default(_objectSpread({},
-_App.default));
-
-createApp(app).$mount();
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createApp"]))
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/main.js?{\"page\":\"pages%2Findex%2Findex\"}":
-/*!********************************************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/main.js?{"page":"pages%2Findex%2Findex"} ***!
-  \********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../Users/11815/Documents/sullayxxx/faceTest/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ "../../../Users/11815/Documents/sullayxxx/faceTest/pages/index/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_index.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/pages.json":
-/*!**************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/pages.json ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/service/index.js":
-/*!********************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/service/index.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _modules = _interopRequireDefault(__webpack_require__(/*! ./modules */ "../../../Users/11815/Documents/sullayxxx/faceTest/service/modules/index.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
-
-_modules.default;exports.default = _default;
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/service/modules sync \\.js$":
-/*!*******************************************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/service/modules sync nonrecursive \.js$ ***!
-  \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./index.js": "../../../Users/11815/Documents/sullayxxx/faceTest/service/modules/index.js"
-};
-
-
-function webpackContext(req) {
-	var id = webpackContextResolve(req);
-	return __webpack_require__(id);
-}
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) { // check for number or string
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
-	}
-	return id;
-}
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = "../../../Users/11815/Documents/sullayxxx/faceTest/service/modules sync \\.js$";
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/service/modules/index.js":
-/*!****************************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/service/modules/index.js ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                      * The file enables `@/store/index.js` to import all vuex modules
-                                                                                                      * in a one-shot manner. There should not be any reason to edit this file.
-                                                                                                      */
-
-var files = __webpack_require__("../../../Users/11815/Documents/sullayxxx/faceTest/service/modules sync \\.js$");
-var modules = {};
-
-files.keys().forEach(function (key) {
-  if (key === './index.js') return;
-  modules[key.replace(/(\.\/|\.js)/g, '')] = files(key).default;
-});var _default =
-
-modules;exports.default = _default;
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/store/index.js":
-/*!******************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/store/index.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js"));
-
-var _modules = _interopRequireDefault(__webpack_require__(/*! ./modules */ "../../../Users/11815/Documents/sullayxxx/faceTest/store/modules/index.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-
-_vue.default.use(_vuex.default);var _default =
-
-new _vuex.default.Store({
-  modules: _modules.default,
-  strict: "development" !== 'production' });exports.default = _default;
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/store/modules sync \\.js$":
-/*!*****************************************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/store/modules sync nonrecursive \.js$ ***!
-  \*****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./index.js": "../../../Users/11815/Documents/sullayxxx/faceTest/store/modules/index.js"
-};
-
-
-function webpackContext(req) {
-	var id = webpackContextResolve(req);
-	return __webpack_require__(id);
-}
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) { // check for number or string
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
-	}
-	return id;
-}
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = "../../../Users/11815/Documents/sullayxxx/faceTest/store/modules sync \\.js$";
-
-/***/ }),
-
-/***/ "../../../Users/11815/Documents/sullayxxx/faceTest/store/modules/index.js":
-/*!**************************************************************************!*\
-  !*** C:/Users/11815/Documents/sullayxxx/faceTest/store/modules/index.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                      * The file enables `@/store/index.js` to import all vuex modules
-                                                                                                      * in a one-shot manner. There should not be any reason to edit this file.
-                                                                                                      */
-
-var files = __webpack_require__("../../../Users/11815/Documents/sullayxxx/faceTest/store/modules sync \\.js$");
-var modules = {};
-
-files.keys().forEach(function (key) {
-  if (key === './index.js') return;
-  modules[key.replace(/(\.\/|\.js)/g, '')] = files(key).default;
-});var _default =
-
-modules;exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/regenerator/index.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime-module.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js":
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],[
+/* 0 */,
+/* 1 */
 /*!************************************************************!*\
   !*** ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js ***!
   \************************************************************/
@@ -294,7 +8,7 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createPage = createPage;exports.createComponent = createComponent;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance");}function _iterableToArrayLimit(arr, i) {var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance");}function _iterableToArray(iter) {if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) {for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {arr2[i] = arr[i];}return arr2;}}
 
 var _toString = Object.prototype.toString;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -336,7 +50,198 @@ var camelize = cached(function (str) {
   return str.replace(camelizeRE, function (_, c) {return c ? c.toUpperCase() : '';});
 });
 
-var SYNC_API_RE = /subNVue|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$/;
+var HOOKS = [
+'invoke',
+'success',
+'fail',
+'complete',
+'returnValue'];
+
+
+var globalInterceptors = {};
+var scopedInterceptors = {};
+
+function mergeHook(parentVal, childVal) {
+  var res = childVal ?
+  parentVal ?
+  parentVal.concat(childVal) :
+  Array.isArray(childVal) ?
+  childVal : [childVal] :
+  parentVal;
+  return res ?
+  dedupeHooks(res) :
+  res;
+}
+
+function dedupeHooks(hooks) {
+  var res = [];
+  for (var i = 0; i < hooks.length; i++) {
+    if (res.indexOf(hooks[i]) === -1) {
+      res.push(hooks[i]);
+    }
+  }
+  return res;
+}
+
+function removeHook(hooks, hook) {
+  var index = hooks.indexOf(hook);
+  if (index !== -1) {
+    hooks.splice(index, 1);
+  }
+}
+
+function mergeInterceptorHook(interceptor, option) {
+  Object.keys(option).forEach(function (hook) {
+    if (HOOKS.indexOf(hook) !== -1 && isFn(option[hook])) {
+      interceptor[hook] = mergeHook(interceptor[hook], option[hook]);
+    }
+  });
+}
+
+function removeInterceptorHook(interceptor, option) {
+  if (!interceptor || !option) {
+    return;
+  }
+  Object.keys(option).forEach(function (hook) {
+    if (HOOKS.indexOf(hook) !== -1 && isFn(option[hook])) {
+      removeHook(interceptor[hook], option[hook]);
+    }
+  });
+}
+
+function addInterceptor(method, option) {
+  if (typeof method === 'string' && isPlainObject(option)) {
+    mergeInterceptorHook(scopedInterceptors[method] || (scopedInterceptors[method] = {}), option);
+  } else if (isPlainObject(method)) {
+    mergeInterceptorHook(globalInterceptors, method);
+  }
+}
+
+function removeInterceptor(method, option) {
+  if (typeof method === 'string') {
+    if (isPlainObject(option)) {
+      removeInterceptorHook(scopedInterceptors[method], option);
+    } else {
+      delete scopedInterceptors[method];
+    }
+  } else if (isPlainObject(method)) {
+    removeInterceptorHook(globalInterceptors, method);
+  }
+}
+
+function wrapperHook(hook) {
+  return function (data) {
+    return hook(data) || data;
+  };
+}
+
+function isPromise(obj) {
+  return !!obj && (typeof obj === 'object' || typeof obj === 'function') && typeof obj.then === 'function';
+}
+
+function queue(hooks, data) {
+  var promise = false;
+  for (var i = 0; i < hooks.length; i++) {
+    var hook = hooks[i];
+    if (promise) {
+      promise = Promise.then(wrapperHook(hook));
+    } else {
+      var res = hook(data);
+      if (isPromise(res)) {
+        promise = Promise.resolve(res);
+      }
+      if (res === false) {
+        return {
+          then: function then() {} };
+
+      }
+    }
+  }
+  return promise || {
+    then: function then(callback) {
+      return callback(data);
+    } };
+
+}
+
+function wrapperOptions(interceptor) {var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  ['success', 'fail', 'complete'].forEach(function (name) {
+    if (Array.isArray(interceptor[name])) {
+      var oldCallback = options[name];
+      options[name] = function callbackInterceptor(res) {
+        queue(interceptor[name], res).then(function (res) {
+          /* eslint-disable no-mixed-operators */
+          return isFn(oldCallback) && oldCallback(res) || res;
+        });
+      };
+    }
+  });
+  return options;
+}
+
+function wrapperReturnValue(method, returnValue) {
+  var returnValueHooks = [];
+  if (Array.isArray(globalInterceptors.returnValue)) {
+    returnValueHooks.push.apply(returnValueHooks, _toConsumableArray(globalInterceptors.returnValue));
+  }
+  var interceptor = scopedInterceptors[method];
+  if (interceptor && Array.isArray(interceptor.returnValue)) {
+    returnValueHooks.push.apply(returnValueHooks, _toConsumableArray(interceptor.returnValue));
+  }
+  returnValueHooks.forEach(function (hook) {
+    returnValue = hook(returnValue) || returnValue;
+  });
+  return returnValue;
+}
+
+function getApiInterceptorHooks(method) {
+  var interceptor = Object.create(null);
+  Object.keys(globalInterceptors).forEach(function (hook) {
+    if (hook !== 'returnValue') {
+      interceptor[hook] = globalInterceptors[hook].slice();
+    }
+  });
+  var scopedInterceptor = scopedInterceptors[method];
+  if (scopedInterceptor) {
+    Object.keys(scopedInterceptor).forEach(function (hook) {
+      if (hook !== 'returnValue') {
+        interceptor[hook] = (interceptor[hook] || []).concat(scopedInterceptor[hook]);
+      }
+    });
+  }
+  return interceptor;
+}
+
+function invokeApi(method, api, options) {for (var _len = arguments.length, params = new Array(_len > 3 ? _len - 3 : 0), _key = 3; _key < _len; _key++) {params[_key - 3] = arguments[_key];}
+  var interceptor = getApiInterceptorHooks(method);
+  if (interceptor && Object.keys(interceptor).length) {
+    if (Array.isArray(interceptor.invoke)) {
+      var res = queue(interceptor.invoke, options);
+      return res.then(function (options) {
+        return api.apply(void 0, [wrapperOptions(interceptor, options)].concat(params));
+      });
+    } else {
+      return api.apply(void 0, [wrapperOptions(interceptor, options)].concat(params));
+    }
+  }
+  return api.apply(void 0, [options].concat(params));
+}
+
+var promiseInterceptor = {
+  returnValue: function returnValue(res) {
+    if (!isPromise(res)) {
+      return res;
+    }
+    return res.then(function (res) {
+      return res[1];
+    }).catch(function (res) {
+      return res[0];
+    });
+  } };
+
+
+var SYNC_API_RE =
+/^\$|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64/;
 
 var CONTEXT_API_RE = /^create|Manager$/;
 
@@ -350,7 +255,7 @@ function isSyncApi(name) {
 }
 
 function isCallbackApi(name) {
-  return CALLBACK_API_RE.test(name);
+  return CALLBACK_API_RE.test(name) && name !== 'onPush';
 }
 
 function handlePromise(promise) {
@@ -375,26 +280,28 @@ function promisify(name, api) {
   if (!shouldPromise(name)) {
     return api;
   }
-  return function promiseApi() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};for (var _len = arguments.length, params = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {params[_key - 1] = arguments[_key];}
+  return function promiseApi() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};for (var _len2 = arguments.length, params = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {params[_key2 - 1] = arguments[_key2];}
     if (isFn(options.success) || isFn(options.fail) || isFn(options.complete)) {
-      return api.apply(void 0, [options].concat(params));
+      return wrapperReturnValue(name, invokeApi.apply(void 0, [name, api, options].concat(params)));
     }
-    return handlePromise(new Promise(function (resolve, reject) {
-      api.apply(void 0, [Object.assign({}, options, {
+    return wrapperReturnValue(name, handlePromise(new Promise(function (resolve, reject) {
+      invokeApi.apply(void 0, [name, api, Object.assign({}, options, {
         success: resolve,
         fail: reject })].concat(
       params));
       /* eslint-disable no-extend-native */
-      Promise.prototype.finally = function (callback) {
-        var promise = this.constructor;
-        return this.then(
-        function (value) {return promise.resolve(callback()).then(function () {return value;});},
-        function (reason) {return promise.resolve(callback()).then(function () {
-            throw reason;
-          });});
+      if (!Promise.prototype.finally) {
+        Promise.prototype.finally = function (callback) {
+          var promise = this.constructor;
+          return this.then(
+          function (value) {return promise.resolve(callback()).then(function () {return value;});},
+          function (reason) {return promise.resolve(callback()).then(function () {
+              throw reason;
+            });});
 
-      };
-    }));
+        };
+      }
+    })));
   };
 }
 
@@ -440,6 +347,19 @@ function upx2px(number, newDeviceWidth) {
   return number < 0 ? -result : result;
 }
 
+var interceptors = {
+  promiseInterceptor: promiseInterceptor };
+
+
+
+
+var baseApi = /*#__PURE__*/Object.freeze({
+  upx2px: upx2px,
+  interceptors: interceptors,
+  addInterceptor: addInterceptor,
+  removeInterceptor: removeInterceptor });
+
+
 var previewImage = {
   args: function args(fromArgs) {
     var currentIndex = parseInt(fromArgs.current);
@@ -477,7 +397,9 @@ var previewImage = {
 var protocols = {
   previewImage: previewImage };
 
-var todos = [];
+var todos = [
+'vibrate'];
+
 var canIUses = [];
 
 var CALLBACKS = ['success', 'fail', 'cancel', 'complete'];
@@ -545,7 +467,11 @@ function wrapper(methodName, method) {
 
       arg1 = processArgs(methodName, arg1, options.args, options.returnValue);
 
-      var returnValue = wx[options.name || methodName](arg1, arg2);
+      var args = [arg1];
+      if (typeof arg2 !== 'undefined') {
+        args.push(arg2);
+      }
+      var returnValue = wx[options.name || methodName].apply(wx, args);
       if (isSyncApi(methodName)) {// 同步 api
         return processReturnValue(methodName, returnValue, options.returnValue, isContextApi(methodName));
       }
@@ -558,6 +484,7 @@ function wrapper(methodName, method) {
 var todoApis = Object.create(null);
 
 var TODOS = [
+'onTabBarMidButtonTap',
 'subscribePush',
 'unsubscribePush',
 'onPush',
@@ -616,6 +543,44 @@ var extraApi = /*#__PURE__*/Object.freeze({
   getProvider: getProvider });
 
 
+var getEmitter = function () {
+  if (typeof getUniEmitter === 'function') {
+    /* eslint-disable no-undef */
+    return getUniEmitter;
+  }
+  var Emitter;
+  return function getUniEmitter() {
+    if (!Emitter) {
+      Emitter = new _vue.default();
+    }
+    return Emitter;
+  };
+}();
+
+function apply(ctx, method, args) {
+  return ctx[method].apply(ctx, args);
+}
+
+function $on() {
+  return apply(getEmitter(), '$on', Array.prototype.slice.call(arguments));
+}
+function $off() {
+  return apply(getEmitter(), '$off', Array.prototype.slice.call(arguments));
+}
+function $once() {
+  return apply(getEmitter(), '$once', Array.prototype.slice.call(arguments));
+}
+function $emit() {
+  return apply(getEmitter(), '$emit', Array.prototype.slice.call(arguments));
+}
+
+var eventApi = /*#__PURE__*/Object.freeze({
+  $on: $on,
+  $off: $off,
+  $once: $once,
+  $emit: $emit });
+
+
 
 
 var api = /*#__PURE__*/Object.freeze({});
@@ -638,7 +603,7 @@ function initTriggerEvent(mpInstance) {
     }
   }
   var oldTriggerEvent = mpInstance.triggerEvent;
-  mpInstance.triggerEvent = function (event) {for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {args[_key2 - 1] = arguments[_key2];}
+  mpInstance.triggerEvent = function (event) {for (var _len3 = arguments.length, args = new Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {args[_key3 - 1] = arguments[_key3];}
     return oldTriggerEvent.apply(mpInstance, [customize(event)].concat(args));
   };
 }
@@ -651,7 +616,7 @@ function initHook(name, options) {
     };
   } else {
     options[name] = function () {
-      initTriggerEvent(this);for (var _len3 = arguments.length, args = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {args[_key3] = arguments[_key3];}
+      initTriggerEvent(this);for (var _len4 = arguments.length, args = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {args[_key4] = arguments[_key4];}
       return oldHook.apply(this, args);
     };
   }
@@ -667,81 +632,101 @@ Component = function Component() {var options = arguments.length > 0 && argument
   return MPComponent(options);
 };
 
-var mocks = ['__route__', '__wxExparserNodeId__', '__wxWebviewId__'];
+var PAGE_EVENT_HOOKS = [
+'onPullDownRefresh',
+'onReachBottom',
+'onShareAppMessage',
+'onPageScroll',
+'onResize',
+'onTabItemTap'];
 
-function initPage(pageOptions) {
-  return initComponent(pageOptions);
-}
 
-function initComponent(componentOptions) {
-  return Component(componentOptions);
-}
-
-function initBehavior(options) {
-  return Behavior(options);
-}
-function initRefs(vm) {
-  var mpInstance = vm.$scope;
-  Object.defineProperty(vm, '$refs', {
-    get: function get() {
-      var $refs = {};
-      var components = mpInstance.selectAllComponents('.vue-ref');
-      components.forEach(function (component) {
-        var ref = component.dataset.ref;
-        $refs[ref] = component.$vm || component;
-      });
-      var forComponents = mpInstance.selectAllComponents('.vue-ref-in-for');
-      forComponents.forEach(function (component) {
-        var ref = component.dataset.ref;
-        if (!$refs[ref]) {
-          $refs[ref] = [];
-        }
-        $refs[ref].push(component.$vm || component);
-      });
-      return $refs;
-    } });
-
-}
-function triggerLink(mpInstance, vueOptions) {
-  mpInstance.triggerEvent('__l', mpInstance.$vm || vueOptions, {
-    bubbles: true,
-    composed: true });
-
-}
-
-function handleLink(event) {
-  if (event.detail.$mp) {// vm
-    if (!event.detail.$parent) {
-      event.detail.$parent = this.$vm;
-      event.detail.$parent.$children.push(event.detail);
-
-      event.detail.$root = this.$vm.$root;
-    }
-  } else {// vueOptions
-    if (!event.detail.parent) {
-      event.detail.parent = this.$vm;
-    }
-  }
-}
-
-function initMocks(vm, mocks$$1) {
+function initMocks(vm, mocks) {
   var mpInstance = vm.$mp[vm.mpType];
-  mocks$$1.forEach(function (mock) {
+  mocks.forEach(function (mock) {
     if (hasOwn(mpInstance, mock)) {
       vm[mock] = mpInstance[mock];
     }
   });
 }
 
-function initHooks(mpOptions, hooks) {
+function hasHook(hook, vueOptions) {
+  if (!vueOptions) {
+    return true;
+  }
+
+  if (_vue.default.options && Array.isArray(_vue.default.options[hook])) {
+    return true;
+  }
+
+  vueOptions = vueOptions.default || vueOptions;
+
+  if (isFn(vueOptions)) {
+    if (isFn(vueOptions.extendOptions[hook])) {
+      return true;
+    }
+    if (vueOptions.super &&
+    vueOptions.super.options &&
+    Array.isArray(vueOptions.super.options[hook])) {
+      return true;
+    }
+    return false;
+  }
+
+  if (isFn(vueOptions[hook])) {
+    return true;
+  }
+  var mixins = vueOptions.mixins;
+  if (Array.isArray(mixins)) {
+    return !!mixins.find(function (mixin) {return hasHook(hook, mixin);});
+  }
+}
+
+function initHooks(mpOptions, hooks, vueOptions) {
   hooks.forEach(function (hook) {
-    mpOptions[hook] = function (args) {
-      return this.$vm.__call_hook(hook, args);
-    };
+    if (hasHook(hook, vueOptions)) {
+      mpOptions[hook] = function (args) {
+        return this.$vm && this.$vm.__call_hook(hook, args);
+      };
+    }
   });
 }
 
-function getData(vueOptions, context) {
+function initVueComponent(Vue, vueOptions) {
+  vueOptions = vueOptions.default || vueOptions;
+  var VueComponent;
+  if (isFn(vueOptions)) {
+    VueComponent = vueOptions;
+    vueOptions = VueComponent.extendOptions;
+  } else {
+    VueComponent = Vue.extend(vueOptions);
+  }
+  return [VueComponent, vueOptions];
+}
+
+function initSlots(vm, vueSlots) {
+  if (Array.isArray(vueSlots) && vueSlots.length) {
+    var $slots = Object.create(null);
+    vueSlots.forEach(function (slotName) {
+      $slots[slotName] = true;
+    });
+    vm.$scopedSlots = vm.$slots = $slots;
+  }
+}
+
+function initVueIds(vueIds, mpInstance) {
+  vueIds = (vueIds || '').split(',');
+  var len = vueIds.length;
+
+  if (len === 1) {
+    mpInstance._$vueId = vueIds[0];
+  } else if (len === 2) {
+    mpInstance._$vueId = vueIds[0];
+    mpInstance._$vuePid = vueIds[1];
+  }
+}
+
+function initData(vueOptions, context) {
   var data = vueOptions.data || {};
   var methods = vueOptions.methods || {};
 
@@ -749,7 +734,7 @@ function getData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -783,7 +768,7 @@ function createObserver(name) {
   };
 }
 
-function getBehaviors(vueOptions) {
+function initBehaviors(vueOptions, initBehavior) {
   var vueBehaviors = vueOptions['behaviors'];
   var vueExtends = vueOptions['extends'];
   var vueMixins = vueOptions['mixins'];
@@ -803,8 +788,14 @@ function getBehaviors(vueOptions) {
           vueProps.push('name');
           vueProps.push('value');
         } else {
-          vueProps['name'] = String;
-          vueProps['value'] = null;
+          vueProps['name'] = {
+            type: String,
+            default: '' };
+
+          vueProps['value'] = {
+            type: [String, Number, Boolean, Array, Object, Date],
+            default: '' };
+
         }
       }
     });
@@ -812,7 +803,7 @@ function getBehaviors(vueOptions) {
   if (isPlainObject(vueExtends) && vueExtends.props) {
     behaviors.push(
     initBehavior({
-      properties: getProperties(vueExtends.props, true) }));
+      properties: initProperties(vueExtends.props, true) }));
 
 
   }
@@ -821,7 +812,7 @@ function getBehaviors(vueOptions) {
       if (isPlainObject(vueMixin) && vueMixin.props) {
         behaviors.push(
         initBehavior({
-          properties: getProperties(vueMixin.props, true) }));
+          properties: initProperties(vueMixin.props, true) }));
 
 
       }
@@ -838,9 +829,13 @@ function parsePropType(key, type, defaultValue, file) {
   return type;
 }
 
-function getProperties(props) {var isBehavior = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;var file = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
+function initProperties(props) {var isBehavior = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;var file = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
   var properties = {};
   if (!isBehavior) {
+    properties.vueId = {
+      type: String,
+      value: '' };
+
     properties.vueSlots = { // 小程序不能直接定义 $slots 的 props，所以通过 vueSlots 转换到 $slots
       type: null,
       value: [],
@@ -871,7 +866,7 @@ function getProperties(props) {var isBehavior = arguments.length > 1 && argument
           value = value();
         }
 
-        opts.type = parsePropType(key, opts.type, value, file);
+        opts.type = parsePropType(key, opts.type);
 
         properties[key] = {
           type: PROP_TYPES.indexOf(opts.type) !== -1 ? opts.type : null,
@@ -879,7 +874,7 @@ function getProperties(props) {var isBehavior = arguments.length > 1 && argument
           observer: createObserver(key) };
 
       } else {// content:String
-        var type = parsePropType(key, opts, null, file);
+        var type = parsePropType(key, opts);
         properties[key] = {
           type: PROP_TYPES.indexOf(type) !== -1 ? type : null,
           observer: createObserver(key) };
@@ -954,16 +949,16 @@ function processEventExtra(vm, extra, event) {
 
   if (Array.isArray(extra) && extra.length) {
     /**
-                                                  *[
-                                                  *    ['data.items', 'data.id', item.data.id],
-                                                  *    ['metas', 'id', meta.id]
-                                                  *],
-                                                  *[
-                                                  *    ['data.items', 'data.id', item.data.id],
-                                                  *    ['metas', 'id', meta.id]
-                                                  *],
-                                                  *'test'
-                                                  */
+                                              *[
+                                              *    ['data.items', 'data.id', item.data.id],
+                                              *    ['metas', 'id', meta.id]
+                                              *],
+                                              *[
+                                              *    ['data.items', 'data.id', item.data.id],
+                                              *    ['metas', 'id', meta.id]
+                                              *],
+                                              *'test'
+                                              */
     extra.forEach(function (dataPath, index) {
       if (typeof dataPath === 'string') {
         if (!dataPath) {// model,prop.sync
@@ -1040,17 +1035,35 @@ function processEventArgs(vm, event) {var args = arguments.length > 2 && argumen
 var ONCE = '~';
 var CUSTOM = '^';
 
+function isMatchEventType(eventType, optType) {
+  return eventType === optType ||
+
+  optType === 'regionchange' && (
+
+  eventType === 'begin' ||
+  eventType === 'end');
+
+
+}
+
 function handleEvent(event) {var _this = this;
   event = wrapper$1(event);
 
   // [['tap',[['handle',[1,2,a]],['handle1',[1,2,a]]]]]
-  var eventOpts = (event.currentTarget || event.target).dataset.eventOpts;
+  var dataset = (event.currentTarget || event.target).dataset;
+  if (!dataset) {
+    return console.warn("\u4E8B\u4EF6\u4FE1\u606F\u4E0D\u5B58\u5728");
+  }
+  var eventOpts = dataset.eventOpts || dataset['event-opts']; // 支付宝 web-view 组件 dataset 非驼峰
   if (!eventOpts) {
     return console.warn("\u4E8B\u4EF6\u4FE1\u606F\u4E0D\u5B58\u5728");
   }
 
   // [['handle',[1,2,a]],['handle1',[1,2,a]]]
   var eventType = event.type;
+
+  var ret = [];
+
   eventOpts.forEach(function (eventOpt) {
     var type = eventOpt[0];
     var eventsArray = eventOpt[1];
@@ -1060,11 +1073,19 @@ function handleEvent(event) {var _this = this;
     var isOnce = type.charAt(0) === ONCE;
     type = isOnce ? type.slice(1) : type;
 
-    if (eventsArray && eventType === type) {
+    if (eventsArray && isMatchEventType(eventType, type)) {
       eventsArray.forEach(function (eventArray) {
         var methodName = eventArray[0];
         if (methodName) {
-          var handler = _this.$vm[methodName];
+          var handlerCtx = _this.$vm;
+          if (
+          handlerCtx.$options.generic &&
+          handlerCtx.$parent &&
+          handlerCtx.$parent.$parent)
+          {// mp-weixin,mp-toutiao 抽象节点模拟 scoped slots
+            handlerCtx = handlerCtx.$parent.$parent;
+          }
+          var handler = handlerCtx[methodName];
           if (!isFn(handler)) {
             throw new Error(" _vm.".concat(methodName, " is not a function"));
           }
@@ -1074,45 +1095,44 @@ function handleEvent(event) {var _this = this;
             }
             handler.once = true;
           }
-          handler.apply(_this.$vm, processEventArgs(
+          ret.push(handler.apply(handlerCtx, processEventArgs(
           _this.$vm,
           event,
           eventArray[1],
           eventArray[2],
           isCustom,
-          methodName));
+          methodName)));
 
         }
       });
     }
   });
+
+  if (
+  eventType === 'input' &&
+  ret.length === 1 &&
+  typeof ret[0] !== 'undefined')
+  {
+    return ret[0];
+  }
 }
 
 var hooks = [
+'onShow',
 'onHide',
 'onError',
-'onPageNotFound',
-'onUniNViewMessage'];
+'onPageNotFound'];
 
 
-function initVm(vm) {
-  if (this.$vm) {// 百度竟然 onShow 在 onLaunch 之前？
-    return;
-  }
-  {
-    if (!wx.canIUse('nextTick')) {// 事实 上2.2.3 即可，简单使用 2.3.0 的 nextTick 判断
-      console.error('当前微信基础库版本过低，请将 微信开发者工具-详情-项目设置-调试基础库版本 更换为`2.3.0`以上');
-    }
+function parseBaseApp(vm, _ref3)
+
+
+{var mocks = _ref3.mocks,initRefs = _ref3.initRefs;
+  if (vm.$options.store) {
+    _vue.default.prototype.$store = vm.$options.store;
   }
 
-  this.$vm = vm;
-
-  this.$vm.$mp = {
-    app: this };
-
-}
-
-function createApp(vm) {
+  _vue.default.prototype.mpHost = "mp-weixin";
 
   _vue.default.mixin({
     beforeCreate: function beforeCreate() {
@@ -1136,183 +1156,187 @@ function createApp(vm) {
         initRefs(this);
         initMocks(this, mocks);
       }
-    },
-    created: function created() {// 处理 injections
-      this.__init_injections(this);
-      this.__init_provide(this);
     } });
 
 
   var appOptions = {
     onLaunch: function onLaunch(args) {
-      initVm.call(this, vm);
+      if (this.$vm) {// 已经初始化过了，主要是为了百度，百度 onShow 在 onLaunch 之前
+        return;
+      }
+      {
+        if (!wx.canIUse('nextTick')) {// 事实 上2.2.3 即可，简单使用 2.3.0 的 nextTick 判断
+          console.error('当前微信基础库版本过低，请将 微信开发者工具-详情-项目设置-调试基础库版本 更换为`2.3.0`以上');
+        }
+      }
+
+      this.$vm = vm;
+
+      this.$vm.$mp = {
+        app: this };
+
+
+      this.$vm.$scope = this;
+      // vm 上也挂载 globalData
+      this.$vm.globalData = this.globalData;
 
       this.$vm._isMounted = true;
-      this.$vm.__call_hook('mounted');
+      this.$vm.__call_hook('mounted', args);
 
       this.$vm.__call_hook('onLaunch', args);
-    },
-    onShow: function onShow(args) {
-      initVm.call(this, vm);
-
-      this.$vm.__call_hook('onShow', args);
     } };
 
 
   // 兼容旧版本 globalData
   appOptions.globalData = vm.$options.globalData || {};
 
-  initHooks(appOptions, hooks); // 延迟执行，因为 App 的注册在 main.js 之前，可能导致生命周期内 Vue 原型上开发者注册的属性无法访问
+  initHooks(appOptions, hooks);
 
-  App(appOptions);
+  return appOptions;
+}
 
+var mocks = ['__route__', '__wxExparserNodeId__', '__wxWebviewId__'];
+
+function findVmByVueId(vm, vuePid) {
+  var $children = vm.$children;
+  // 优先查找直属
+  var parentVm = $children.find(function (childVm) {return childVm.$scope._$vueId === vuePid;});
+  if (parentVm) {
+    return parentVm;
+  }
+  // 反向递归查找
+  for (var i = $children.length - 1; i >= 0; i--) {
+    parentVm = findVmByVueId($children[i], vuePid);
+    if (parentVm) {
+      return parentVm;
+    }
+  }
+}
+
+function initBehavior(options) {
+  return Behavior(options);
+}
+
+function isPage() {
+  return !!this.route;
+}
+
+function initRelation(detail) {
+  this.triggerEvent('__l', detail);
+}
+
+function initRefs(vm) {
+  var mpInstance = vm.$scope;
+  Object.defineProperty(vm, '$refs', {
+    get: function get() {
+      var $refs = {};
+      var components = mpInstance.selectAllComponents('.vue-ref');
+      components.forEach(function (component) {
+        var ref = component.dataset.ref;
+        $refs[ref] = component.$vm || component;
+      });
+      var forComponents = mpInstance.selectAllComponents('.vue-ref-in-for');
+      forComponents.forEach(function (component) {
+        var ref = component.dataset.ref;
+        if (!$refs[ref]) {
+          $refs[ref] = [];
+        }
+        $refs[ref].push(component.$vm || component);
+      });
+      return $refs;
+    } });
+
+}
+
+function handleLink(event) {var _ref4 =
+
+
+
+  event.detail || event.value,vuePid = _ref4.vuePid,vueOptions = _ref4.vueOptions; // detail 是微信,value 是百度(dipatch)
+
+  var parentVm;
+
+  if (vuePid) {
+    parentVm = findVmByVueId(this.$vm, vuePid);
+  }
+
+  if (!parentVm) {
+    parentVm = this.$vm;
+  }
+
+  vueOptions.parent = parentVm;
+}
+
+function parseApp(vm) {
+  return parseBaseApp(vm, {
+    mocks: mocks,
+    initRefs: initRefs });
+
+}
+
+function createApp(vm) {
+  App(parseApp(vm));
   return vm;
 }
 
-var hooks$1 = [
-'onShow',
-'onHide',
-'onPullDownRefresh',
-'onReachBottom',
-'onShareAppMessage',
-'onPageScroll',
-'onResize',
-'onTabItemTap',
-'onBackPress',
-'onNavigationBarButtonTap',
-'onNavigationBarSearchInputChanged',
-'onNavigationBarSearchInputConfirmed',
-'onNavigationBarSearchInputClicked'];
+function parseBaseComponent(vueComponentOptions)
 
 
-function initVm$1(VueComponent) {// 百度的 onLoad 触发在 attached 之前
-  if (this.$vm) {
-    return;
-  }
-
-  this.$vm = new VueComponent({
-    mpType: 'page',
-    mpInstance: this });
-
-
-  this.$vm.__call_hook('created');
-  this.$vm.$mount();
-}
-
-function createPage(vueOptions) {
-  vueOptions = vueOptions.default || vueOptions;
-  var VueComponent;
-  if (isFn(vueOptions)) {
-    VueComponent = vueOptions;
-    vueOptions = VueComponent.extendOptions;
-  } else {
-    VueComponent = _vue.default.extend(vueOptions);
-  }
-  var pageOptions = {
-    options: {
-      multipleSlots: true,
-      addGlobalClass: true },
-
-    data: getData(vueOptions, _vue.default.prototype),
-    lifetimes: { // 当页面作为组件时
-      attached: function attached() {
-        initVm$1.call(this, VueComponent);
-      },
-      ready: function ready() {
-        this.$vm.__call_hook('beforeMount');
-        this.$vm._isMounted = true;
-        this.$vm.__call_hook('mounted');
-        this.$vm.__call_hook('onReady');
-      },
-      detached: function detached() {
-        this.$vm.$destroy();
-      } },
-
-    methods: { // 作为页面时
-      onLoad: function onLoad(args) {
-        initVm$1.call(this, VueComponent);
-        this.$vm.$mp.query = args; // 又要兼容 mpvue
-        this.$vm.__call_hook('onLoad', args); // 开发者可能会在 onLoad 时赋值，提前到 mount 之前
-      },
-      onUnload: function onUnload() {
-        this.$vm.__call_hook('onUnload');
-      },
-      __e: handleEvent,
-      __l: handleLink } };
-
-
-
-  initHooks(pageOptions.methods, hooks$1);
-
-  return initPage(pageOptions, vueOptions);
-}
-
-function initVm$2(VueComponent) {
-  if (this.$vm) {
-    return;
-  }
-
-  var properties = this.properties;
+{var _ref5 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},isPage = _ref5.isPage,initRelation = _ref5.initRelation;var _initVueComponent =
+  initVueComponent(_vue.default, vueComponentOptions),_initVueComponent2 = _slicedToArray(_initVueComponent, 2),VueComponent = _initVueComponent2[0],vueOptions = _initVueComponent2[1];
 
   var options = {
-    mpType: 'component',
-    mpInstance: this,
-    propsData: properties };
+    multipleSlots: true,
+    addGlobalClass: true };
 
-  // 初始化 vue 实例
-  this.$vm = new VueComponent(options);
 
-  // 处理$slots,$scopedSlots（暂不支持动态变化$slots）
-  var vueSlots = properties.vueSlots;
-  if (Array.isArray(vueSlots) && vueSlots.length) {
-    var $slots = Object.create(null);
-    vueSlots.forEach(function (slotName) {
-      $slots[slotName] = true;
-    });
-    this.$vm.$scopedSlots = this.$vm.$slots = $slots;
+  {
+    // 微信multipleSlots  部分情况有 bug，导致内容顺序错乱 如 u-list，提供覆盖选项
+    if (vueOptions['mp-weixin'] && vueOptions['mp-weixin']['options']) {
+      Object.assign(options, vueOptions['mp-weixin']['options']);
+    }
   }
-  // 性能优先，mount 提前到 attached 中，保证组件首次渲染数据被合并
-  // 导致与标准 Vue 的差异，data 和 computed 中不能使用$parent，provide等组件属性
-  this.$vm.$mount();
-}
-
-function createComponent(vueOptions) {
-  vueOptions = vueOptions.default || vueOptions;
-
-  var VueComponent;
-  if (isFn(vueOptions)) {
-    VueComponent = vueOptions; // TODO form-field props.name,props.value
-    vueOptions = VueComponent.extendOptions;
-  } else {
-    VueComponent = _vue.default.extend(vueOptions);
-  }
-
-  var behaviors = getBehaviors(vueOptions);
-
-  var properties = getProperties(vueOptions.props, false, vueOptions.__file);
 
   var componentOptions = {
-    options: {
-      multipleSlots: true,
-      addGlobalClass: true },
-
-    data: getData(vueOptions, _vue.default.prototype),
-    behaviors: behaviors,
-    properties: properties,
+    options: options,
+    data: initData(vueOptions, _vue.default.prototype),
+    behaviors: initBehaviors(vueOptions, initBehavior),
+    properties: initProperties(vueOptions.props, false, vueOptions.__file),
     lifetimes: {
       attached: function attached() {
-        initVm$2.call(this, VueComponent);
+        var properties = this.properties;
+
+        var options = {
+          mpType: isPage.call(this) ? 'page' : 'component',
+          mpInstance: this,
+          propsData: properties };
+
+
+        initVueIds(properties.vueId, this);
+
+        // 处理父子关系
+        initRelation.call(this, {
+          vuePid: this._$vuePid,
+          vueOptions: options });
+
+
+        // 初始化 vue 实例
+        this.$vm = new VueComponent(options);
+
+        // 处理$slots,$scopedSlots（暂不支持动态变化$slots）
+        initSlots(this.$vm, properties.vueSlots);
+
+        // 触发首次 setData
+        this.$vm.$mount();
       },
       ready: function ready() {
-        initVm$2.call(this, VueComponent); // 目前发现部分情况小程序 attached 不触发
-        triggerLink(this); // 处理 parent,children
-
-        // 补充生命周期
-        this.$vm.__call_hook('created');
-        this.$vm.__call_hook('beforeMount');
-        this.$vm._isMounted = true;
-        this.$vm.__call_hook('mounted');
-        this.$vm.__call_hook('onReady');
+        // 当组件 props 默认值为 true，初始化时传入 false 会导致 created,ready 触发, 但 attached 不触发
+        // https://developers.weixin.qq.com/community/develop/doc/00066ae2844cc0f8eb883e2a557800
+        if (this.$vm) {
+          this.$vm._isMounted = true;
+          this.$vm.__call_hook('mounted');
+          this.$vm.__call_hook('onReady');
+        }
       },
       detached: function detached() {
         this.$vm.$destroy();
@@ -1320,7 +1344,7 @@ function createComponent(vueOptions) {
 
     pageLifetimes: {
       show: function show(args) {
-        this.$vm.__call_hook('onPageShow', args);
+        this.$vm && this.$vm.__call_hook('onPageShow', args);
       },
       hide: function hide() {
         this.$vm && this.$vm.__call_hook('onPageHide');
@@ -1330,12 +1354,73 @@ function createComponent(vueOptions) {
       } },
 
     methods: {
-      __e: handleEvent,
-      __l: handleLink } };
+      __l: handleLink,
+      __e: handleEvent } };
 
 
 
-  return initComponent(componentOptions, vueOptions);
+  if (Array.isArray(vueOptions.wxsCallMethods)) {
+    vueOptions.wxsCallMethods.forEach(function (callMethod) {
+      componentOptions.methods[callMethod] = function (args) {
+        return this.$vm[callMethod](args);
+      };
+    });
+  }
+
+  if (isPage) {
+    return componentOptions;
+  }
+  return [componentOptions, VueComponent];
+}
+
+function parseComponent(vueComponentOptions) {
+  return parseBaseComponent(vueComponentOptions, {
+    isPage: isPage,
+    initRelation: initRelation });
+
+}
+
+var hooks$1 = [
+'onShow',
+'onHide',
+'onUnload'];
+
+
+hooks$1.push.apply(hooks$1, PAGE_EVENT_HOOKS);
+
+function parseBasePage(vuePageOptions, _ref6)
+
+
+{var isPage = _ref6.isPage,initRelation = _ref6.initRelation;
+  var pageOptions = parseComponent(vuePageOptions);
+
+  initHooks(pageOptions.methods, hooks$1, vuePageOptions);
+
+  pageOptions.methods.onLoad = function (args) {
+    this.$vm.$mp.query = args; // 兼容 mpvue
+    this.$vm.__call_hook('onLoad', args);
+  };
+
+  return pageOptions;
+}
+
+function parsePage(vuePageOptions) {
+  return parseBasePage(vuePageOptions, {
+    isPage: isPage,
+    initRelation: initRelation });
+
+}
+
+function createPage(vuePageOptions) {
+  {
+    return Component(parsePage(vuePageOptions));
+  }
+}
+
+function createComponent(vueOptions) {
+  {
+    return Component(parseComponent(vueOptions));
+  }
 }
 
 todos.forEach(function (todoApi) {
@@ -1343,7 +1428,8 @@ todos.forEach(function (todoApi) {
 });
 
 canIUses.forEach(function (canIUseApi) {
-  var apiName = protocols[canIUseApi] && protocols[canIUseApi].name ? protocols[canIUseApi].name : canIUseApi;
+  var apiName = protocols[canIUseApi] && protocols[canIUseApi].name ? protocols[canIUseApi].name :
+  canIUseApi;
   if (!wx.canIUse(apiName)) {
     protocols[canIUseApi] = false;
   }
@@ -1351,11 +1437,14 @@ canIUses.forEach(function (canIUseApi) {
 
 var uni = {};
 
-if (typeof Proxy !== 'undefined') {
+if (typeof Proxy !== 'undefined' && "mp-weixin" !== 'app-plus') {
   uni = new Proxy({}, {
     get: function get(target, name) {
-      if (name === 'upx2px') {
-        return upx2px;
+      if (target[name]) {
+        return target[name];
+      }
+      if (baseApi[name]) {
+        return baseApi[name];
       }
       if (api[name]) {
         return promisify(name, api[name]);
@@ -1368,14 +1457,23 @@ if (typeof Proxy !== 'undefined') {
           return promisify(name, todoApis[name]);
         }
       }
+      if (eventApi[name]) {
+        return eventApi[name];
+      }
       if (!hasOwn(wx, name) && !hasOwn(protocols, name)) {
         return;
       }
       return promisify(name, wrapper(name, wx[name]));
+    },
+    set: function set(target, name, value) {
+      target[name] = value;
+      return true;
     } });
 
 } else {
-  uni.upx2px = upx2px;
+  Object.keys(baseApi).forEach(function (name) {
+    uni[name] = baseApi[name];
+  });
 
   {
     Object.keys(todoApis).forEach(function (name) {
@@ -1385,6 +1483,10 @@ if (typeof Proxy !== 'undefined') {
       uni[name] = promisify(name, todoApis[name]);
     });
   }
+
+  Object.keys(eventApi).forEach(function (name) {
+    uni[name] = eventApi[name];
+  });
 
   Object.keys(api).forEach(function (name) {
     uni[name] = promisify(name, api[name]);
@@ -1397,13 +1499,16 @@ if (typeof Proxy !== 'undefined') {
   });
 }
 
+wx.createApp = createApp;
+wx.createPage = createPage;
+wx.createComponent = createComponent;
+
 var uni$1 = uni;var _default =
 
 uni$1;exports.default = _default;
 
 /***/ }),
-
-/***/ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js":
+/* 2 */
 /*!******************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js ***!
   \******************************************************************************************/
@@ -2125,8 +2230,8 @@ Dep.prototype.removeSub = function removeSub (sub) {
 };
 
 Dep.prototype.depend = function depend () {
-  if (Dep.target) {
-    Dep.target.addDep(this);
+  if (Dep.SharedObject.target) {
+    Dep.SharedObject.target.addDep(this);
   }
 };
 
@@ -2147,17 +2252,20 @@ Dep.prototype.notify = function notify () {
 // The current target watcher being evaluated.
 // This is globally unique because only one watcher
 // can be evaluated at a time.
-Dep.target = null;
-var targetStack = [];
+// fixed by xxxxxx (nvue shared vuex)
+/* eslint-disable no-undef */
+Dep.SharedObject = typeof SharedObject !== 'undefined' ? SharedObject : {};
+Dep.SharedObject.target = null;
+Dep.SharedObject.targetStack = [];
 
 function pushTarget (target) {
-  targetStack.push(target);
-  Dep.target = target;
+  Dep.SharedObject.targetStack.push(target);
+  Dep.SharedObject.target = target;
 }
 
 function popTarget () {
-  targetStack.pop();
-  Dep.target = targetStack[targetStack.length - 1];
+  Dep.SharedObject.targetStack.pop();
+  Dep.SharedObject.target = Dep.SharedObject.targetStack[Dep.SharedObject.targetStack.length - 1];
 }
 
 /*  */
@@ -2324,7 +2432,13 @@ var Observer = function Observer (value) {
   def(value, '__ob__', this);
   if (Array.isArray(value)) {
     if (hasProto) {
-      protoAugment(value, arrayMethods);
+      {// fixed by xxxxxx 微信小程序使用 plugins 之后，数组方法被直接挂载到了数组对象上，需要执行 copyAugment 逻辑
+        if(value.push !== value.__proto__.push){
+          copyAugment(value, arrayMethods, arrayKeys);
+        } else {
+          protoAugment(value, arrayMethods);
+        }
+      }
     } else {
       copyAugment(value, arrayMethods, arrayKeys);
     }
@@ -2436,7 +2550,7 @@ function defineReactive$$1 (
     configurable: true,
     get: function reactiveGetter () {
       var value = getter ? getter.call(obj) : val;
-      if (Dep.target) {
+      if (Dep.SharedObject.target) { // fixed by xxxxxx
         dep.depend();
         if (childOb) {
           childOb.dep.depend();
@@ -3889,7 +4003,12 @@ function resolveSlots (
         slot.push(child);
       }
     } else {
-      (slots.default || (slots.default = [])).push(child);
+      // fixed by xxxxxx 临时 hack 掉 uni-app 中的异步 name slot page
+      if(child.asyncMeta && child.asyncMeta.data && child.asyncMeta.data.slot === 'page'){
+        (slots['page'] || (slots['page'] = [])).push(child);
+      }else{
+        (slots.default || (slots.default = [])).push(child);
+      }
     }
   }
   // ignore slots that contains only whitespace
@@ -5964,7 +6083,30 @@ function initProps (vm, propsOptions) {
       }
       defineReactive$$1(props, key, value, function () {
         if (!isRoot && !isUpdatingChildComponent) {
-          !vm._getFormData && warn(//fixed by xxxxxx uni://form-field 时不告警
+          {
+            if(vm.mpHost === 'mp-baidu'){//百度 observer 在 setData callback 之后触发，直接忽略该 warn
+                return
+            }
+            //fixed by xxxxxx __next_tick_pending,uni://form-field 时不告警
+            if(
+                key === 'value' && 
+                Array.isArray(vm.$options.behaviors) &&
+                vm.$options.behaviors.indexOf('uni://form-field') !== -1
+              ){
+              return
+            }
+            if(vm._getFormData){
+              return
+            }
+            var $parent = vm.$parent;
+            while($parent){
+              if($parent.__next_tick_pending){
+                return  
+              }
+              $parent = $parent.$parent;
+            }
+          }
+          warn(
             "Avoid mutating a prop directly since the value will be " +
             "overwritten whenever the parent component re-renders. " +
             "Instead, use a data or computed property based on the prop's " +
@@ -6122,7 +6264,7 @@ function createComputedGetter (key) {
       if (watcher.dirty) {
         watcher.evaluate();
       }
-      if (Dep.target) {
+      if (Dep.SharedObject.target) {// fixed by xxxxxx
         watcher.depend();
       }
       return watcher.value
@@ -6287,7 +6429,10 @@ function initMixin (Vue) {
     initEvents(vm);
     initRender(vm);
     callHook(vm, 'beforeCreate');
+    vm.mpHost !== 'mp-toutiao' && initInjections(vm); // resolve injections before data/props  
     initState(vm);
+    vm.mpHost !== 'mp-toutiao' && initProvide(vm); // resolve provide after data/props
+    vm.mpHost !== 'mp-toutiao' && callHook(vm, 'created');      
 
     /* istanbul ignore if */
     if ( true && config.performance && mark) {
@@ -6845,7 +6990,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -6866,14 +7011,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -6905,57 +7050,64 @@ function nextTick$1(vm, cb) {
 /*  */
 
 function cloneWithData(vm) {
-    // 确保当前 vm 所有数据被同步
-    var dataKeys = [].concat(
-        Object.keys(vm._data || {}),
-        Object.keys(vm._computedWatchers || {}));
+  // 确保当前 vm 所有数据被同步
+  var ret = Object.create(null);
+  var dataKeys = [].concat(
+    Object.keys(vm._data || {}),
+    Object.keys(vm._computedWatchers || {}));
 
-    var ret = dataKeys.reduce(function(ret, key) {
-        ret[key] = vm[key];
-        return ret
-    }, Object.create(null));
-    //TODO 需要把无用数据处理掉，比如 list=>l0 则 list 需要移除，否则多传输一份数据
-    Object.assign(ret, vm.$mp.data || {});
-    if (
-        Array.isArray(vm.$options.behaviors) &&
-        vm.$options.behaviors.indexOf('uni://form-field') !== -1
-    ) { //form-field
-        ret['name'] = vm.name;
-        ret['value'] = vm.value;
-    }
-    return JSON.parse(JSON.stringify(ret))
+  dataKeys.reduce(function(ret, key) {
+    ret[key] = vm[key];
+    return ret
+  }, ret);
+  //TODO 需要把无用数据处理掉，比如 list=>l0 则 list 需要移除，否则多传输一份数据
+  Object.assign(ret, vm.$mp.data || {});
+  if (
+    Array.isArray(vm.$options.behaviors) &&
+    vm.$options.behaviors.indexOf('uni://form-field') !== -1
+  ) { //form-field
+    ret['name'] = vm.name;
+    ret['value'] = vm.value;
+  }
+
+  return JSON.parse(JSON.stringify(ret))
 }
 
 var patch = function(oldVnode, vnode) {
-    var this$1 = this;
+  var this$1 = this;
 
-    if (vnode === null) { //destroy
-        return
+  if (vnode === null) { //destroy
+    return
+  }
+  if (this.mpType === 'page' || this.mpType === 'component') {
+    var mpInstance = this.$scope;
+    var data = Object.create(null);
+    try {
+      data = cloneWithData(this);
+    } catch (err) {
+      console.error(err);
     }
-    if (this.mpType === 'page' || this.mpType === 'component') {
-        var mpInstance = this.$scope;
-        var data = cloneWithData(this);
-        data.__webviewId__ = mpInstance.data.__webviewId__;
-        var mpData = Object.create(null);
-        Object.keys(data).forEach(function (key) { //仅同步 data 中有的数据
-            mpData[key] = mpInstance.data[key];
-        });
-        var diffData = diff(data, mpData);
-        if (Object.keys(diffData).length) {
-            if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
-                console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
-                    ']差量更新',
-                    JSON.stringify(diffData));
-            }
-            this.__next_tick_pending = true;
-            mpInstance.setData(diffData, function () {
-                this$1.__next_tick_pending = false;
-                flushCallbacks$1(this$1);
-            });
-        } else {
-            flushCallbacks$1(this);
-        }
+    data.__webviewId__ = mpInstance.data.__webviewId__;
+    var mpData = Object.create(null);
+    Object.keys(data).forEach(function (key) { //仅同步 data 中有的数据
+      mpData[key] = mpInstance.data[key];
+    });
+    var diffData = diff(data, mpData);
+    if (Object.keys(diffData).length) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
+          ']差量更新',
+          JSON.stringify(diffData));
+      }
+      this.__next_tick_pending = true;
+      mpInstance.setData(diffData, function () {
+        this$1.__next_tick_pending = false;
+        flushCallbacks$1(this$1);
+      });
+    } else {
+      flushCallbacks$1(this);
     }
+  }
 };
 
 /*  */
@@ -6995,6 +7147,8 @@ function mountComponent$1(
       }
     }
   }
+  
+  vm.mpHost !== 'mp-toutiao' && callHook(vm, 'beforeMount');
 
   var updateComponent = function () {
     vm._update(vm._render(), hydrating);
@@ -7099,105 +7253,136 @@ function normalizeStyleBinding (bindingStyle) {
 var MP_METHODS = ['createSelectorQuery', 'createIntersectionObserver', 'selectAllComponents', 'selectComponent'];
 
 function getTarget(obj, path) {
-    var parts = path.split('.');
-    var key = parts[0];
-    if (key.indexOf('__$n') === 0) { //number index
-        key = parseInt(key.replace('__$n', ''));
-    }
-    if (parts.length === 1) {
-        return obj[key]
-    }
-    return getTarget(obj[key], parts.slice(1).join('.'))
+  var parts = path.split('.');
+  var key = parts[0];
+  if (key.indexOf('__$n') === 0) { //number index
+    key = parseInt(key.replace('__$n', ''));
+  }
+  if (parts.length === 1) {
+    return obj[key]
+  }
+  return getTarget(obj[key], parts.slice(1).join('.'))
 }
 
 function internalMixin(Vue) {
 
-    var oldEmit = Vue.prototype.$emit;
+  Vue.config.errorHandler = function(err) {
+    console.error(err);
+  };
 
-    Vue.prototype.$emit = function(event) {
-        if (this.$scope && event) {
-            this.$scope['triggerEvent'](event, {
-                __args__: toArray(arguments, 1)
-            });
-        }
-        return oldEmit.apply(this, arguments)
+  var oldEmit = Vue.prototype.$emit;
+
+  Vue.prototype.$emit = function(event) {
+    if (this.$scope && event) {
+      this.$scope['triggerEvent'](event, {
+        __args__: toArray(arguments, 1)
+      });
+    }
+    return oldEmit.apply(this, arguments)
+  };
+
+  Vue.prototype.$nextTick = function(fn) {
+    return nextTick$1(this, fn)
+  };
+
+  MP_METHODS.forEach(function (method) {
+    Vue.prototype[method] = function(args) {
+      if (this.$scope) {
+        return this.$scope[method](args)
+      }
     };
-    
-    Vue.prototype.$nextTick = function (fn) {
-      return nextTick$1(this, fn)
-    };
+  });
 
-    MP_METHODS.forEach(function (method) {
-        Vue.prototype[method] = function(args) {
-            if (this.$scope) {
-                return this.$scope[method](args)
-            }
-        };
-    });
+  Vue.prototype.__init_provide = initProvide;
 
-    Vue.prototype.__init_provide = initProvide;
+  Vue.prototype.__init_injections = initInjections;
 
-    Vue.prototype.__init_injections = initInjections;
+  Vue.prototype.__call_hook = function(hook, args) {
+    var vm = this;
+    // #7573 disable dep collection when invoking lifecycle hooks
+    pushTarget();
+    var handlers = vm.$options[hook];
+    var info = hook + " hook";
+    var ret;
+    if (handlers) {
+      for (var i = 0, j = handlers.length; i < j; i++) {
+        ret = invokeWithErrorHandling(handlers[i], vm, args ? [args] : null, vm, info);
+      }
+    }
+    if (vm._hasHookEvent) {
+      vm.$emit('hook:' + hook);
+    }
+    popTarget();
+    return ret
+  };
 
-    Vue.prototype.__call_hook = function(hook, args) {
-        var vm = this;
-        // #7573 disable dep collection when invoking lifecycle hooks
-        pushTarget();
-        var handlers = vm.$options[hook];
-        var info = hook + " hook";
-        var ret;
-        if (handlers) {
-            for (var i = 0, j = handlers.length; i < j; i++) {
-                ret = invokeWithErrorHandling(handlers[i], vm, args ? [args] : null, vm, info);
-            }
-        }
-        if (vm._hasHookEvent) {
-            vm.$emit('hook:' + hook);
-        }
-        popTarget();
-        return ret
-    };
+  Vue.prototype.__set_model = function(target, key, value, modifiers) {
+    if (Array.isArray(modifiers)) {
+      if (modifiers.indexOf('trim') !== -1) {
+        value = value.trim();
+      }
+      if (modifiers.indexOf('number') !== -1) {
+        value = this._n(value);
+      }
+    }
+    if (!target) {
+      target = this;
+    }
+    target[key] = value;
+  };
 
-    Vue.prototype.__set_model = function(target, key, value, modifiers) {
-        if (Array.isArray(modifiers)) {
-            if (modifiers.indexOf('trim') !== -1) {
-                value = value.trim();
-            }
-            if (modifiers.indexOf('number') !== -1) {
-                value = this._n(value);
-            }
-        }
-        target[key] = value;
-    };
+  Vue.prototype.__set_sync = function(target, key, value) {
+    if (!target) {
+      target = this;
+    }
+    target[key] = value;
+  };
 
-    Vue.prototype.__set_sync = function(target, key, value) {
-        target[key] = value;
-    };
+  Vue.prototype.__get_orig = function(item) {
+    if (isPlainObject(item)) {
+      return item['$orig'] || item
+    }
+    return item
+  };
 
-    Vue.prototype.__get_orig = function(item) {
-        if (isPlainObject(item)) {
-            return item['$orig'] || item
-        }
-        return item
-    };
-
-    Vue.prototype.__get_value = function(dataPath, target) {
-        return getTarget(target || this, dataPath)
-    };
+  Vue.prototype.__get_value = function(dataPath, target) {
+    return getTarget(target || this, dataPath)
+  };
 
 
-    Vue.prototype.__get_class = function(dynamicClass, staticClass) {
-        return renderClass(staticClass, dynamicClass)
-    };
+  Vue.prototype.__get_class = function(dynamicClass, staticClass) {
+    return renderClass(staticClass, dynamicClass)
+  };
 
-    Vue.prototype.__get_style = function(dynamicStyle, staticStyle) {
-        if (!dynamicStyle && !staticStyle) {
-            return ''
-        }
-        var dynamicStyleObj = normalizeStyleBinding(dynamicStyle);
-        var styleObj = staticStyle ? extend(staticStyle, dynamicStyleObj) : dynamicStyleObj;
-        return Object.keys(styleObj).map(function (name) { return ((hyphenate(name)) + ":" + (styleObj[name])); }).join(';')
-    };
+  Vue.prototype.__get_style = function(dynamicStyle, staticStyle) {
+    if (!dynamicStyle && !staticStyle) {
+      return ''
+    }
+    var dynamicStyleObj = normalizeStyleBinding(dynamicStyle);
+    var styleObj = staticStyle ? extend(staticStyle, dynamicStyleObj) : dynamicStyleObj;
+    return Object.keys(styleObj).map(function (name) { return ((hyphenate(name)) + ":" + (styleObj[name])); }).join(';')
+  };
+
+  Vue.prototype.__map = function(val, iteratee) {
+    //TODO 暂不考虑 string,number
+    var ret, i, l, keys, key;
+    if (Array.isArray(val)) {
+      ret = new Array(val.length);
+      for (i = 0, l = val.length; i < l; i++) {
+        ret[i] = iteratee(val[i], i);
+      }
+      return ret
+    } else if (isObject(val)) {
+      keys = Object.keys(val);
+      ret = Object.create(null);
+      for (i = 0, l = keys.length; i < l; i++) {
+        key = keys[i];
+        ret[key] = iteratee(val[key], key, i);
+      }
+      return ret
+    }
+    return []
+  };
 
 }
 
@@ -7282,791 +7467,974 @@ internalMixin(Vue);
 
 /* harmony default export */ __webpack_exports__["default"] = (Vue);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../webpack/buildin/global.js */ 3)))
 
 /***/ }),
-
-/***/ "./node_modules/regenerator-runtime/runtime-module.js":
-/*!************************************************************!*\
-  !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-// This method of obtaining a reference to the global object needs to be
-// kept identical to the way it is obtained in runtime.js
-var g = (function() {
-  return this || (typeof self === "object" && self);
-})() || Function("return this")();
-
-// Use `getOwnPropertyNames` because not all browsers support calling
-// `hasOwnProperty` on the global `self` object in a worker. See #183.
-var hadRuntime = g.regeneratorRuntime &&
-  Object.getOwnPropertyNames(g).indexOf("regeneratorRuntime") >= 0;
-
-// Save the old regeneratorRuntime in case it needs to be restored later.
-var oldRuntime = hadRuntime && g.regeneratorRuntime;
-
-// Force reevalutation of runtime.js.
-g.regeneratorRuntime = undefined;
-
-module.exports = __webpack_require__(/*! ./runtime */ "./node_modules/regenerator-runtime/runtime.js");
-
-if (hadRuntime) {
-  // Restore the original runtime.
-  g.regeneratorRuntime = oldRuntime;
-} else {
-  // Remove the global property added by runtime.js.
-  try {
-    delete g.regeneratorRuntime;
-  } catch(e) {
-    g.regeneratorRuntime = undefined;
-  }
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/regenerator-runtime/runtime.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/regenerator-runtime/runtime.js ***!
-  \*****************************************************/
+/* 3 */
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-!(function(global) {
-  "use strict";
-
-  var Op = Object.prototype;
-  var hasOwn = Op.hasOwnProperty;
-  var undefined; // More compressible than void 0.
-  var $Symbol = typeof Symbol === "function" ? Symbol : {};
-  var iteratorSymbol = $Symbol.iterator || "@@iterator";
-  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
-  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
-
-  var inModule = typeof module === "object";
-  var runtime = global.regeneratorRuntime;
-  if (runtime) {
-    if (inModule) {
-      // If regeneratorRuntime is defined globally and we're in a module,
-      // make the exports object identical to regeneratorRuntime.
-      module.exports = runtime;
-    }
-    // Don't bother evaluating the rest of this file if the runtime was
-    // already defined globally.
-    return;
-  }
-
-  // Define the runtime globally (as expected by generated code) as either
-  // module.exports (if we're in a module) or a new, empty object.
-  runtime = global.regeneratorRuntime = inModule ? module.exports : {};
-
-  function wrap(innerFn, outerFn, self, tryLocsList) {
-    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
-    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
-    var generator = Object.create(protoGenerator.prototype);
-    var context = new Context(tryLocsList || []);
-
-    // The ._invoke method unifies the implementations of the .next,
-    // .throw, and .return methods.
-    generator._invoke = makeInvokeMethod(innerFn, self, context);
-
-    return generator;
-  }
-  runtime.wrap = wrap;
-
-  // Try/catch helper to minimize deoptimizations. Returns a completion
-  // record like context.tryEntries[i].completion. This interface could
-  // have been (and was previously) designed to take a closure to be
-  // invoked without arguments, but in all the cases we care about we
-  // already have an existing method we want to call, so there's no need
-  // to create a new function object. We can even get away with assuming
-  // the method takes exactly one argument, since that happens to be true
-  // in every case, so we don't have to touch the arguments object. The
-  // only additional allocation required is the completion record, which
-  // has a stable shape and so hopefully should be cheap to allocate.
-  function tryCatch(fn, obj, arg) {
-    try {
-      return { type: "normal", arg: fn.call(obj, arg) };
-    } catch (err) {
-      return { type: "throw", arg: err };
-    }
-  }
-
-  var GenStateSuspendedStart = "suspendedStart";
-  var GenStateSuspendedYield = "suspendedYield";
-  var GenStateExecuting = "executing";
-  var GenStateCompleted = "completed";
-
-  // Returning this object from the innerFn has the same effect as
-  // breaking out of the dispatch switch statement.
-  var ContinueSentinel = {};
-
-  // Dummy constructor functions that we use as the .constructor and
-  // .constructor.prototype properties for functions that return Generator
-  // objects. For full spec compliance, you may wish to configure your
-  // minifier not to mangle the names of these two functions.
-  function Generator() {}
-  function GeneratorFunction() {}
-  function GeneratorFunctionPrototype() {}
-
-  // This is a polyfill for %IteratorPrototype% for environments that
-  // don't natively support it.
-  var IteratorPrototype = {};
-  IteratorPrototype[iteratorSymbol] = function () {
-    return this;
-  };
-
-  var getProto = Object.getPrototypeOf;
-  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
-  if (NativeIteratorPrototype &&
-      NativeIteratorPrototype !== Op &&
-      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
-    // This environment has a native %IteratorPrototype%; use it instead
-    // of the polyfill.
-    IteratorPrototype = NativeIteratorPrototype;
-  }
-
-  var Gp = GeneratorFunctionPrototype.prototype =
-    Generator.prototype = Object.create(IteratorPrototype);
-  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
-  GeneratorFunctionPrototype.constructor = GeneratorFunction;
-  GeneratorFunctionPrototype[toStringTagSymbol] =
-    GeneratorFunction.displayName = "GeneratorFunction";
-
-  // Helper for defining the .next, .throw, and .return methods of the
-  // Iterator interface in terms of a single ._invoke method.
-  function defineIteratorMethods(prototype) {
-    ["next", "throw", "return"].forEach(function(method) {
-      prototype[method] = function(arg) {
-        return this._invoke(method, arg);
-      };
-    });
-  }
-
-  runtime.isGeneratorFunction = function(genFun) {
-    var ctor = typeof genFun === "function" && genFun.constructor;
-    return ctor
-      ? ctor === GeneratorFunction ||
-        // For the native GeneratorFunction constructor, the best we can
-        // do is to check its .name property.
-        (ctor.displayName || ctor.name) === "GeneratorFunction"
-      : false;
-  };
-
-  runtime.mark = function(genFun) {
-    if (Object.setPrototypeOf) {
-      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
-    } else {
-      genFun.__proto__ = GeneratorFunctionPrototype;
-      if (!(toStringTagSymbol in genFun)) {
-        genFun[toStringTagSymbol] = "GeneratorFunction";
-      }
-    }
-    genFun.prototype = Object.create(Gp);
-    return genFun;
-  };
-
-  // Within the body of any async function, `await x` is transformed to
-  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
-  // `hasOwn.call(value, "__await")` to determine if the yielded value is
-  // meant to be awaited.
-  runtime.awrap = function(arg) {
-    return { __await: arg };
-  };
-
-  function AsyncIterator(generator) {
-    function invoke(method, arg, resolve, reject) {
-      var record = tryCatch(generator[method], generator, arg);
-      if (record.type === "throw") {
-        reject(record.arg);
-      } else {
-        var result = record.arg;
-        var value = result.value;
-        if (value &&
-            typeof value === "object" &&
-            hasOwn.call(value, "__await")) {
-          return Promise.resolve(value.__await).then(function(value) {
-            invoke("next", value, resolve, reject);
-          }, function(err) {
-            invoke("throw", err, resolve, reject);
-          });
-        }
-
-        return Promise.resolve(value).then(function(unwrapped) {
-          // When a yielded Promise is resolved, its final value becomes
-          // the .value of the Promise<{value,done}> result for the
-          // current iteration.
-          result.value = unwrapped;
-          resolve(result);
-        }, function(error) {
-          // If a rejected Promise was yielded, throw the rejection back
-          // into the async generator function so it can be handled there.
-          return invoke("throw", error, resolve, reject);
-        });
-      }
-    }
-
-    var previousPromise;
-
-    function enqueue(method, arg) {
-      function callInvokeWithMethodAndArg() {
-        return new Promise(function(resolve, reject) {
-          invoke(method, arg, resolve, reject);
-        });
-      }
-
-      return previousPromise =
-        // If enqueue has been called before, then we want to wait until
-        // all previous Promises have been resolved before calling invoke,
-        // so that results are always delivered in the correct order. If
-        // enqueue has not been called before, then it is important to
-        // call invoke immediately, without waiting on a callback to fire,
-        // so that the async generator function has the opportunity to do
-        // any necessary setup in a predictable way. This predictability
-        // is why the Promise constructor synchronously invokes its
-        // executor callback, and why async functions synchronously
-        // execute code before the first await. Since we implement simple
-        // async functions in terms of async generators, it is especially
-        // important to get this right, even though it requires care.
-        previousPromise ? previousPromise.then(
-          callInvokeWithMethodAndArg,
-          // Avoid propagating failures to Promises returned by later
-          // invocations of the iterator.
-          callInvokeWithMethodAndArg
-        ) : callInvokeWithMethodAndArg();
-    }
-
-    // Define the unified helper method that is used to implement .next,
-    // .throw, and .return (see defineIteratorMethods).
-    this._invoke = enqueue;
-  }
-
-  defineIteratorMethods(AsyncIterator.prototype);
-  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
-    return this;
-  };
-  runtime.AsyncIterator = AsyncIterator;
-
-  // Note that simple async functions are implemented on top of
-  // AsyncIterator objects; they just return a Promise for the value of
-  // the final result produced by the iterator.
-  runtime.async = function(innerFn, outerFn, self, tryLocsList) {
-    var iter = new AsyncIterator(
-      wrap(innerFn, outerFn, self, tryLocsList)
-    );
-
-    return runtime.isGeneratorFunction(outerFn)
-      ? iter // If outerFn is a generator, return the full iterator.
-      : iter.next().then(function(result) {
-          return result.done ? result.value : iter.next();
-        });
-  };
-
-  function makeInvokeMethod(innerFn, self, context) {
-    var state = GenStateSuspendedStart;
-
-    return function invoke(method, arg) {
-      if (state === GenStateExecuting) {
-        throw new Error("Generator is already running");
-      }
-
-      if (state === GenStateCompleted) {
-        if (method === "throw") {
-          throw arg;
-        }
-
-        // Be forgiving, per 25.3.3.3.3 of the spec:
-        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
-        return doneResult();
-      }
-
-      context.method = method;
-      context.arg = arg;
-
-      while (true) {
-        var delegate = context.delegate;
-        if (delegate) {
-          var delegateResult = maybeInvokeDelegate(delegate, context);
-          if (delegateResult) {
-            if (delegateResult === ContinueSentinel) continue;
-            return delegateResult;
-          }
-        }
-
-        if (context.method === "next") {
-          // Setting context._sent for legacy support of Babel's
-          // function.sent implementation.
-          context.sent = context._sent = context.arg;
-
-        } else if (context.method === "throw") {
-          if (state === GenStateSuspendedStart) {
-            state = GenStateCompleted;
-            throw context.arg;
-          }
-
-          context.dispatchException(context.arg);
-
-        } else if (context.method === "return") {
-          context.abrupt("return", context.arg);
-        }
-
-        state = GenStateExecuting;
-
-        var record = tryCatch(innerFn, self, context);
-        if (record.type === "normal") {
-          // If an exception is thrown from innerFn, we leave state ===
-          // GenStateExecuting and loop back for another invocation.
-          state = context.done
-            ? GenStateCompleted
-            : GenStateSuspendedYield;
-
-          if (record.arg === ContinueSentinel) {
-            continue;
-          }
-
-          return {
-            value: record.arg,
-            done: context.done
-          };
-
-        } else if (record.type === "throw") {
-          state = GenStateCompleted;
-          // Dispatch the exception by looping back around to the
-          // context.dispatchException(context.arg) call above.
-          context.method = "throw";
-          context.arg = record.arg;
-        }
-      }
-    };
-  }
-
-  // Call delegate.iterator[context.method](context.arg) and handle the
-  // result, either by returning a { value, done } result from the
-  // delegate iterator, or by modifying context.method and context.arg,
-  // setting context.delegate to null, and returning the ContinueSentinel.
-  function maybeInvokeDelegate(delegate, context) {
-    var method = delegate.iterator[context.method];
-    if (method === undefined) {
-      // A .throw or .return when the delegate iterator has no .throw
-      // method always terminates the yield* loop.
-      context.delegate = null;
-
-      if (context.method === "throw") {
-        if (delegate.iterator.return) {
-          // If the delegate iterator has a return method, give it a
-          // chance to clean up.
-          context.method = "return";
-          context.arg = undefined;
-          maybeInvokeDelegate(delegate, context);
-
-          if (context.method === "throw") {
-            // If maybeInvokeDelegate(context) changed context.method from
-            // "return" to "throw", let that override the TypeError below.
-            return ContinueSentinel;
-          }
-        }
-
-        context.method = "throw";
-        context.arg = new TypeError(
-          "The iterator does not provide a 'throw' method");
-      }
-
-      return ContinueSentinel;
-    }
-
-    var record = tryCatch(method, delegate.iterator, context.arg);
-
-    if (record.type === "throw") {
-      context.method = "throw";
-      context.arg = record.arg;
-      context.delegate = null;
-      return ContinueSentinel;
-    }
-
-    var info = record.arg;
-
-    if (! info) {
-      context.method = "throw";
-      context.arg = new TypeError("iterator result is not an object");
-      context.delegate = null;
-      return ContinueSentinel;
-    }
-
-    if (info.done) {
-      // Assign the result of the finished delegate to the temporary
-      // variable specified by delegate.resultName (see delegateYield).
-      context[delegate.resultName] = info.value;
-
-      // Resume execution at the desired location (see delegateYield).
-      context.next = delegate.nextLoc;
-
-      // If context.method was "throw" but the delegate handled the
-      // exception, let the outer generator proceed normally. If
-      // context.method was "next", forget context.arg since it has been
-      // "consumed" by the delegate iterator. If context.method was
-      // "return", allow the original .return call to continue in the
-      // outer generator.
-      if (context.method !== "return") {
-        context.method = "next";
-        context.arg = undefined;
-      }
-
-    } else {
-      // Re-yield the result returned by the delegate method.
-      return info;
-    }
-
-    // The delegate iterator is finished, so forget it and continue with
-    // the outer generator.
-    context.delegate = null;
-    return ContinueSentinel;
-  }
-
-  // Define Generator.prototype.{next,throw,return} in terms of the
-  // unified ._invoke helper method.
-  defineIteratorMethods(Gp);
-
-  Gp[toStringTagSymbol] = "Generator";
-
-  // A Generator should always return itself as the iterator object when the
-  // @@iterator function is called on it. Some browsers' implementations of the
-  // iterator prototype chain incorrectly implement this, causing the Generator
-  // object to not be returned from this call. This ensures that doesn't happen.
-  // See https://github.com/facebook/regenerator/issues/274 for more details.
-  Gp[iteratorSymbol] = function() {
-    return this;
-  };
-
-  Gp.toString = function() {
-    return "[object Generator]";
-  };
-
-  function pushTryEntry(locs) {
-    var entry = { tryLoc: locs[0] };
-
-    if (1 in locs) {
-      entry.catchLoc = locs[1];
-    }
-
-    if (2 in locs) {
-      entry.finallyLoc = locs[2];
-      entry.afterLoc = locs[3];
-    }
-
-    this.tryEntries.push(entry);
-  }
-
-  function resetTryEntry(entry) {
-    var record = entry.completion || {};
-    record.type = "normal";
-    delete record.arg;
-    entry.completion = record;
-  }
-
-  function Context(tryLocsList) {
-    // The root entry object (effectively a try statement without a catch
-    // or a finally block) gives us a place to store values thrown from
-    // locations where there is no enclosing try statement.
-    this.tryEntries = [{ tryLoc: "root" }];
-    tryLocsList.forEach(pushTryEntry, this);
-    this.reset(true);
-  }
-
-  runtime.keys = function(object) {
-    var keys = [];
-    for (var key in object) {
-      keys.push(key);
-    }
-    keys.reverse();
-
-    // Rather than returning an object with a next method, we keep
-    // things simple and return the next function itself.
-    return function next() {
-      while (keys.length) {
-        var key = keys.pop();
-        if (key in object) {
-          next.value = key;
-          next.done = false;
-          return next;
-        }
-      }
-
-      // To avoid creating an additional object, we just hang the .value
-      // and .done properties off the next function object itself. This
-      // also ensures that the minifier will not anonymize the function.
-      next.done = true;
-      return next;
-    };
-  };
-
-  function values(iterable) {
-    if (iterable) {
-      var iteratorMethod = iterable[iteratorSymbol];
-      if (iteratorMethod) {
-        return iteratorMethod.call(iterable);
-      }
-
-      if (typeof iterable.next === "function") {
-        return iterable;
-      }
-
-      if (!isNaN(iterable.length)) {
-        var i = -1, next = function next() {
-          while (++i < iterable.length) {
-            if (hasOwn.call(iterable, i)) {
-              next.value = iterable[i];
-              next.done = false;
-              return next;
-            }
-          }
-
-          next.value = undefined;
-          next.done = true;
-
-          return next;
-        };
-
-        return next.next = next;
-      }
-    }
-
-    // Return an iterator with no values.
-    return { next: doneResult };
-  }
-  runtime.values = values;
-
-  function doneResult() {
-    return { value: undefined, done: true };
-  }
-
-  Context.prototype = {
-    constructor: Context,
-
-    reset: function(skipTempReset) {
-      this.prev = 0;
-      this.next = 0;
-      // Resetting context._sent for legacy support of Babel's
-      // function.sent implementation.
-      this.sent = this._sent = undefined;
-      this.done = false;
-      this.delegate = null;
-
-      this.method = "next";
-      this.arg = undefined;
-
-      this.tryEntries.forEach(resetTryEntry);
-
-      if (!skipTempReset) {
-        for (var name in this) {
-          // Not sure about the optimal order of these conditions:
-          if (name.charAt(0) === "t" &&
-              hasOwn.call(this, name) &&
-              !isNaN(+name.slice(1))) {
-            this[name] = undefined;
-          }
-        }
-      }
-    },
-
-    stop: function() {
-      this.done = true;
-
-      var rootEntry = this.tryEntries[0];
-      var rootRecord = rootEntry.completion;
-      if (rootRecord.type === "throw") {
-        throw rootRecord.arg;
-      }
-
-      return this.rval;
-    },
-
-    dispatchException: function(exception) {
-      if (this.done) {
-        throw exception;
-      }
-
-      var context = this;
-      function handle(loc, caught) {
-        record.type = "throw";
-        record.arg = exception;
-        context.next = loc;
-
-        if (caught) {
-          // If the dispatched exception was caught by a catch block,
-          // then let that catch block handle the exception normally.
-          context.method = "next";
-          context.arg = undefined;
-        }
-
-        return !! caught;
-      }
-
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        var record = entry.completion;
-
-        if (entry.tryLoc === "root") {
-          // Exception thrown outside of any try block that could handle
-          // it, so set the completion value of the entire function to
-          // throw the exception.
-          return handle("end");
-        }
-
-        if (entry.tryLoc <= this.prev) {
-          var hasCatch = hasOwn.call(entry, "catchLoc");
-          var hasFinally = hasOwn.call(entry, "finallyLoc");
-
-          if (hasCatch && hasFinally) {
-            if (this.prev < entry.catchLoc) {
-              return handle(entry.catchLoc, true);
-            } else if (this.prev < entry.finallyLoc) {
-              return handle(entry.finallyLoc);
-            }
-
-          } else if (hasCatch) {
-            if (this.prev < entry.catchLoc) {
-              return handle(entry.catchLoc, true);
-            }
-
-          } else if (hasFinally) {
-            if (this.prev < entry.finallyLoc) {
-              return handle(entry.finallyLoc);
-            }
-
-          } else {
-            throw new Error("try statement without catch or finally");
-          }
-        }
-      }
-    },
-
-    abrupt: function(type, arg) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.tryLoc <= this.prev &&
-            hasOwn.call(entry, "finallyLoc") &&
-            this.prev < entry.finallyLoc) {
-          var finallyEntry = entry;
-          break;
-        }
-      }
-
-      if (finallyEntry &&
-          (type === "break" ||
-           type === "continue") &&
-          finallyEntry.tryLoc <= arg &&
-          arg <= finallyEntry.finallyLoc) {
-        // Ignore the finally entry if control is not jumping to a
-        // location outside the try/catch block.
-        finallyEntry = null;
-      }
-
-      var record = finallyEntry ? finallyEntry.completion : {};
-      record.type = type;
-      record.arg = arg;
-
-      if (finallyEntry) {
-        this.method = "next";
-        this.next = finallyEntry.finallyLoc;
-        return ContinueSentinel;
-      }
-
-      return this.complete(record);
-    },
-
-    complete: function(record, afterLoc) {
-      if (record.type === "throw") {
-        throw record.arg;
-      }
-
-      if (record.type === "break" ||
-          record.type === "continue") {
-        this.next = record.arg;
-      } else if (record.type === "return") {
-        this.rval = this.arg = record.arg;
-        this.method = "return";
-        this.next = "end";
-      } else if (record.type === "normal" && afterLoc) {
-        this.next = afterLoc;
-      }
-
-      return ContinueSentinel;
-    },
-
-    finish: function(finallyLoc) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.finallyLoc === finallyLoc) {
-          this.complete(entry.completion, entry.afterLoc);
-          resetTryEntry(entry);
-          return ContinueSentinel;
-        }
-      }
-    },
-
-    "catch": function(tryLoc) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.tryLoc === tryLoc) {
-          var record = entry.completion;
-          if (record.type === "throw") {
-            var thrown = record.arg;
-            resetTryEntry(entry);
-          }
-          return thrown;
-        }
-      }
-
-      // The context.catch method must only be called with a location
-      // argument that corresponds to a known catch block.
-      throw new Error("illegal catch attempt");
-    },
-
-    delegateYield: function(iterable, resultName, nextLoc) {
-      this.delegate = {
-        iterator: values(iterable),
-        resultName: resultName,
-        nextLoc: nextLoc
-      };
-
-      if (this.method === "next") {
-        // Deliberately forget the last sent value so that we don't
-        // accidentally pass it on to the delegate.
-        this.arg = undefined;
-      }
-
-      return ContinueSentinel;
-    }
-  };
-})(
-  // In sloppy mode, unbound `this` refers to the global object, fallback to
-  // Function constructor if we're in global strict mode. That is sadly a form
-  // of indirect eval which violates Content Security Policy.
-  (function() {
-    return this || (typeof self === "object" && self);
-  })() || Function("return this")()
-);
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
 
 
 /***/ }),
+/* 4 */
+/*!****************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/pages.json ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
+"use strict";
+
+
+/***/ }),
+/* 5 */
+/*!*******************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-stat/dist/index.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {var _package = __webpack_require__(/*! ../package.json */ 6);function _possibleConstructorReturn(self, call) {if (call && (typeof call === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}
+
+var STAT_VERSION = _package.version;
+var STAT_URL = 'https://tongji.dcloud.io/uni/stat';
+var STAT_H5_URL = 'https://tongji.dcloud.io/uni/stat.gif';
+var PAGE_PVER_TIME = 1800;
+var APP_PVER_TIME = 300;
+var OPERATING_TIME = 10;
+
+var UUID_KEY = '__DC_STAT_UUID';
+var UUID_VALUE = '__DC_UUID_VALUE';
+
+function getUuid() {
+  var uuid = '';
+  if (getPlatformName() === 'n') {
+    try {
+      uuid = plus.runtime.getDCloudId();
+    } catch (e) {
+      uuid = '';
+    }
+    return uuid;
+  }
+
+  try {
+    uuid = uni.getStorageSync(UUID_KEY);
+  } catch (e) {
+    uuid = UUID_VALUE;
+  }
+
+  if (!uuid) {
+    uuid = Date.now() + '' + Math.floor(Math.random() * 1e7);
+    try {
+      uni.setStorageSync(UUID_KEY, uuid);
+    } catch (e) {
+      uni.setStorageSync(UUID_KEY, UUID_VALUE);
+    }
+  }
+  return uuid;
+}
+
+var getSgin = function getSgin(statData) {
+  var arr = Object.keys(statData);
+  var sortArr = arr.sort();
+  var sgin = {};
+  var sginStr = '';
+  for (var i in sortArr) {
+    sgin[sortArr[i]] = statData[sortArr[i]];
+    sginStr += sortArr[i] + '=' + statData[sortArr[i]] + '&';
+  }
+  // const options = sginStr.substr(0, sginStr.length - 1)
+  // sginStr = sginStr.substr(0, sginStr.length - 1) + '&key=' + STAT_KEY;
+  // const si = crypto.createHash('md5').update(sginStr).digest('hex');
+  return {
+    sign: '',
+    options: sginStr.substr(0, sginStr.length - 1) };
+
+};
+
+var getSplicing = function getSplicing(data) {
+  var str = '';
+  for (var i in data) {
+    str += i + '=' + data[i] + '&';
+  }
+  return str.substr(0, str.length - 1);
+};
+
+var getTime = function getTime() {
+  return parseInt(new Date().getTime() / 1000);
+};
+
+var getPlatformName = function getPlatformName() {
+  var platformList = {
+    'app-plus': 'n',
+    'h5': 'h5',
+    'mp-weixin': 'wx',
+    'mp-alipay': 'ali',
+    'mp-baidu': 'bd',
+    'mp-toutiao': 'tt',
+    'mp-qq': 'qq' };
+
+  return platformList["mp-weixin"];
+};
+
+var getPackName = function getPackName() {
+  var packName = '';
+  if (getPlatformName() === 'wx' || getPlatformName() === 'qq') {
+    // 兼容微信小程序低版本基础库
+    if (uni.canIUse('getAccountInfoSync')) {
+      packName = uni.getAccountInfoSync().miniProgram.appId || '';
+    }
+  }
+  return packName;
+};
+
+var getVersion = function getVersion() {
+  return getPlatformName() === 'n' ? plus.runtime.version : '';
+};
+
+var getChannel = function getChannel() {
+  var platformName = getPlatformName();
+  var channel = '';
+  if (platformName === 'n') {
+    channel = plus.runtime.channel;
+  }
+  return channel;
+};
+
+var getScene = function getScene(options) {
+  var platformName = getPlatformName();
+  var scene = '';
+  if (options) {
+    return options;
+  }
+  if (platformName === 'wx') {
+    scene = uni.getLaunchOptionsSync().scene;
+  }
+  return scene;
+};
+var First__Visit__Time__KEY = 'First__Visit__Time';
+var Last__Visit__Time__KEY = 'Last__Visit__Time';
+
+var getFirstVisitTime = function getFirstVisitTime() {
+  var timeStorge = uni.getStorageSync(First__Visit__Time__KEY);
+  var time = 0;
+  if (timeStorge) {
+    time = timeStorge;
+  } else {
+    time = getTime();
+    uni.setStorageSync(First__Visit__Time__KEY, time);
+    uni.removeStorageSync(Last__Visit__Time__KEY);
+  }
+  return time;
+};
+
+var getLastVisitTime = function getLastVisitTime() {
+  var timeStorge = uni.getStorageSync(Last__Visit__Time__KEY);
+  var time = 0;
+  if (timeStorge) {
+    time = timeStorge;
+  } else {
+    time = '';
+  }
+  uni.setStorageSync(Last__Visit__Time__KEY, getTime());
+  return time;
+};
+
+
+var PAGE_RESIDENCE_TIME = '__page__residence__time';
+var First_Page_residence_time = 0;
+var Last_Page_residence_time = 0;
+
+
+var setPageResidenceTime = function setPageResidenceTime() {
+  First_Page_residence_time = getTime();
+  if (getPlatformName() === 'n') {
+    uni.setStorageSync(PAGE_RESIDENCE_TIME, getTime());
+  }
+  return First_Page_residence_time;
+};
+
+var getPageResidenceTime = function getPageResidenceTime() {
+  Last_Page_residence_time = getTime();
+  if (getPlatformName() === 'n') {
+    First_Page_residence_time = uni.getStorageSync(PAGE_RESIDENCE_TIME);
+  }
+  return Last_Page_residence_time - First_Page_residence_time;
+};
+var TOTAL__VISIT__COUNT = 'Total__Visit__Count';
+var getTotalVisitCount = function getTotalVisitCount() {
+  var timeStorge = uni.getStorageSync(TOTAL__VISIT__COUNT);
+  var count = 1;
+  if (timeStorge) {
+    count = timeStorge;
+    count++;
+  }
+  uni.setStorageSync(TOTAL__VISIT__COUNT, count);
+  return count;
+};
+
+var GetEncodeURIComponentOptions = function GetEncodeURIComponentOptions(statData) {
+  var data = {};
+  for (var prop in statData) {
+    data[prop] = encodeURIComponent(statData[prop]);
+  }
+  return data;
+};
+
+var Set__First__Time = 0;
+var Set__Last__Time = 0;
+
+var getFirstTime = function getFirstTime() {
+  var time = new Date().getTime();
+  Set__First__Time = time;
+  Set__Last__Time = 0;
+  return time;
+};
+
+
+var getLastTime = function getLastTime() {
+  var time = new Date().getTime();
+  Set__Last__Time = time;
+  return time;
+};
+
+
+var getResidenceTime = function getResidenceTime(type) {
+  var residenceTime = 0;
+  if (Set__First__Time !== 0) {
+    residenceTime = Set__Last__Time - Set__First__Time;
+  }
+
+  residenceTime = parseInt(residenceTime / 1000);
+  residenceTime = residenceTime < 1 ? 1 : residenceTime;
+  if (type === 'app') {
+    var overtime = residenceTime > APP_PVER_TIME ? true : false;
+    return {
+      residenceTime: residenceTime,
+      overtime: overtime };
+
+  }
+  if (type === 'page') {
+    var _overtime = residenceTime > PAGE_PVER_TIME ? true : false;
+    return {
+      residenceTime: residenceTime,
+      overtime: _overtime };
+
+  }
+
+  return {
+    residenceTime: residenceTime };
+
+
+};
+
+var getRoute = function getRoute() {
+  var pages = getCurrentPages();
+  var page = pages[pages.length - 1];
+  var _self = page.$vm;
+
+  if (getPlatformName() === 'bd') {
+    return _self.$mp && _self.$mp.page.is;
+  } else {
+    return _self.$scope && _self.$scope.route || _self.$mp && _self.$mp.page.route;
+  }
+};
+
+var getPageRoute = function getPageRoute(self) {
+  var pages = getCurrentPages();
+  var page = pages[pages.length - 1];
+  var _self = page.$vm;
+  var query = self._query;
+  var str = query && JSON.stringify(query) !== '{}' ? '?' + JSON.stringify(query) : '';
+  // clear
+  self._query = '';
+  if (getPlatformName() === 'bd') {
+    return _self.$mp && _self.$mp.page.is + str;
+  } else {
+    return _self.$scope && _self.$scope.route + str || _self.$mp && _self.$mp.page.route + str;
+  }
+};
+
+var getPageTypes = function getPageTypes(self) {
+  if (self.mpType === 'page' || self.$mp && self.$mp.mpType === 'page' || self.$options.mpType === 'page') {
+    return true;
+  }
+  return false;
+};
+
+var calibration = function calibration(eventName, options) {
+  //  login 、 share 、pay_success 、pay_fail 、register 、title
+  if (!eventName) {
+    console.error("uni.report \u7F3A\u5C11 [eventName] \u53C2\u6570");
+    return true;
+  }
+  if (typeof eventName !== 'string') {
+    console.error("uni.report [eventName] \u53C2\u6570\u7C7B\u578B\u9519\u8BEF,\u53EA\u80FD\u4E3A String \u7C7B\u578B");
+    return true;
+  }
+  if (eventName.length > 255) {
+    console.error("uni.report [eventName] \u53C2\u6570\u957F\u5EA6\u4E0D\u80FD\u5927\u4E8E 255");
+    return true;
+  }
+
+  if (typeof options !== 'string' && typeof options !== 'object') {
+    console.error("uni.report [options] \u53C2\u6570\u7C7B\u578B\u9519\u8BEF,\u53EA\u80FD\u4E3A String \u6216 Object \u7C7B\u578B");
+    return true;
+  }
+
+  if (typeof options === 'string' && options.length > 255) {
+    console.error("uni.report [options] \u53C2\u6570\u957F\u5EA6\u4E0D\u80FD\u5927\u4E8E 255");
+    return true;
+  }
+
+  if (eventName === 'title' && typeof options !== 'string') {
+    console.error('uni.report [eventName] 参数为 title 时，[options] 参数只能为 String 类型');
+    return true;
+  }
+};
+
+var PagesJson = __webpack_require__(/*! uni-pages?{"type":"style"} */ 7).default;
+var statConfig = __webpack_require__(/*! uni-stat-config */ 8).default || __webpack_require__(/*! uni-stat-config */ 8);
+
+var resultOptions = uni.getSystemInfoSync();var
+
+Util = /*#__PURE__*/function () {
+  function Util() {_classCallCheck(this, Util);
+    this.self = '';
+    this._retry = 0;
+    this._platform = '';
+    this._query = {};
+    this._navigationBarTitle = {
+      config: '',
+      page: '',
+      report: '',
+      lt: '' };
+
+    this._operatingTime = 0;
+    this._reportingRequestData = {
+      '1': [],
+      '11': [] };
+
+    this.__prevent_triggering = false;
+
+    this.__licationHide = false;
+    this.__licationShow = false;
+    this._lastPageRoute = '';
+    this.statData = {
+      uuid: getUuid(),
+      ut: getPlatformName(),
+      mpn: getPackName(),
+      ak: statConfig.appid,
+      usv: STAT_VERSION,
+      v: getVersion(),
+      ch: getChannel(),
+      cn: '',
+      pn: '',
+      ct: '',
+      t: getTime(),
+      tt: '',
+      p: resultOptions.platform === 'android' ? 'a' : 'i',
+      brand: resultOptions.brand || '',
+      md: resultOptions.model,
+      sv: resultOptions.system.replace(/(Android|iOS)\s/, ''),
+      mpsdk: resultOptions.SDKVersion || '',
+      mpv: resultOptions.version || '',
+      lang: resultOptions.language,
+      pr: resultOptions.pixelRatio,
+      ww: resultOptions.windowWidth,
+      wh: resultOptions.windowHeight,
+      sw: resultOptions.screenWidth,
+      sh: resultOptions.screenHeight };
+
+
+  }_createClass(Util, [{ key: "_applicationShow", value: function _applicationShow()
+
+    {
+      if (this.__licationHide) {
+        getLastTime();
+        var time = getResidenceTime('app');
+        if (time.overtime) {
+          var options = {
+            path: this._lastPageRoute,
+            scene: this.statData.sc };
+
+          this._sendReportRequest(options);
+        }
+        this.__licationHide = false;
+      }
+    } }, { key: "_applicationHide", value: function _applicationHide(
+
+    self, type) {
+
+      this.__licationHide = true;
+      getLastTime();
+      var time = getResidenceTime();
+      getFirstTime();
+      var route = getPageRoute(this);
+      this._sendHideRequest({
+        urlref: route,
+        urlref_ts: time.residenceTime },
+      type);
+    } }, { key: "_pageShow", value: function _pageShow()
+
+    {
+      var route = getPageRoute(this);
+      var routepath = getRoute();
+      this._navigationBarTitle.config = PagesJson &&
+      PagesJson.pages[routepath] &&
+      PagesJson.pages[routepath].titleNView &&
+      PagesJson.pages[routepath].titleNView.titleText ||
+      PagesJson &&
+      PagesJson.pages[routepath] &&
+      PagesJson.pages[routepath].navigationBarTitleText || '';
+
+      if (this.__licationShow) {
+        getFirstTime();
+        this.__licationShow = false;
+        // console.log('这是 onLauch 之后执行的第一次 pageShow ，为下次记录时间做准备');
+        this._lastPageRoute = route;
+        return;
+      }
+
+      getLastTime();
+      this._lastPageRoute = route;
+      var time = getResidenceTime('page');
+      if (time.overtime) {
+        var options = {
+          path: this._lastPageRoute,
+          scene: this.statData.sc };
+
+        this._sendReportRequest(options);
+      }
+      getFirstTime();
+    } }, { key: "_pageHide", value: function _pageHide()
+
+    {
+      if (!this.__licationHide) {
+        getLastTime();
+        var time = getResidenceTime('page');
+        this._sendPageRequest({
+          url: this._lastPageRoute,
+          urlref: this._lastPageRoute,
+          urlref_ts: time.residenceTime });
+
+        this._navigationBarTitle = {
+          config: '',
+          page: '',
+          report: '',
+          lt: '' };
+
+        return;
+      }
+    } }, { key: "_login", value: function _login()
+
+    {
+      this._sendEventRequest({
+        key: 'login' },
+      0);
+    } }, { key: "_share", value: function _share()
+
+    {
+      this._sendEventRequest({
+        key: 'share' },
+      0);
+    } }, { key: "_payment", value: function _payment(
+    key) {
+      this._sendEventRequest({
+        key: key },
+      0);
+    } }, { key: "_sendReportRequest", value: function _sendReportRequest(
+    options) {
+
+      this._navigationBarTitle.lt = '1';
+      var query = options.query && JSON.stringify(options.query) !== '{}' ? '?' + JSON.stringify(options.query) : '';
+      this.statData.lt = '1';
+      this.statData.url = options.path + query || '';
+      this.statData.t = getTime();
+      this.statData.sc = getScene(options.scene);
+      this.statData.fvts = getFirstVisitTime();
+      this.statData.lvts = getLastVisitTime();
+      this.statData.tvc = getTotalVisitCount();
+      if (getPlatformName() === 'n') {
+        this.getProperty();
+      } else {
+        this.getNetworkInfo();
+      }
+    } }, { key: "_sendPageRequest", value: function _sendPageRequest(
+
+    opt) {var
+
+      url =
+
+
+      opt.url,urlref = opt.urlref,urlref_ts = opt.urlref_ts;
+      this._navigationBarTitle.lt = '11';
+      var options = {
+        ak: this.statData.ak,
+        uuid: this.statData.uuid,
+        lt: '11',
+        ut: this.statData.ut,
+        url: url,
+        tt: this.statData.tt,
+        urlref: urlref,
+        urlref_ts: urlref_ts,
+        ch: this.statData.ch,
+        usv: this.statData.usv,
+        t: getTime(),
+        p: this.statData.p };
+
+      this.request(options);
+    } }, { key: "_sendHideRequest", value: function _sendHideRequest(
+
+    opt, type) {var
+
+      urlref =
+
+      opt.urlref,urlref_ts = opt.urlref_ts;
+      var options = {
+        ak: this.statData.ak,
+        uuid: this.statData.uuid,
+        lt: '3',
+        ut: this.statData.ut,
+        urlref: urlref,
+        urlref_ts: urlref_ts,
+        ch: this.statData.ch,
+        usv: this.statData.usv,
+        t: getTime(),
+        p: this.statData.p };
+
+      this.request(options, type);
+    } }, { key: "_sendEventRequest", value: function _sendEventRequest()
+
+
+
+    {var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},_ref$key = _ref.key,key = _ref$key === void 0 ? '' : _ref$key,_ref$value = _ref.value,value = _ref$value === void 0 ? "" : _ref$value;
+      var route = this._lastPageRoute;
+      var options = {
+        ak: this.statData.ak,
+        uuid: this.statData.uuid,
+        lt: '21',
+        ut: this.statData.ut,
+        url: route,
+        ch: this.statData.ch,
+        e_n: key,
+        e_v: typeof value === 'object' ? JSON.stringify(value) : value.toString(),
+        usv: this.statData.usv,
+        t: getTime(),
+        p: this.statData.p };
+
+      this.request(options);
+    } }, { key: "getNetworkInfo", value: function getNetworkInfo()
+
+    {var _this = this;
+      uni.getNetworkType({
+        success: function success(result) {
+          _this.statData.net = result.networkType;
+          _this.getLocation();
+        } });
+
+    } }, { key: "getProperty", value: function getProperty()
+
+    {var _this2 = this;
+      plus.runtime.getProperty(plus.runtime.appid, function (wgtinfo) {
+        _this2.statData.v = wgtinfo.version || '';
+        _this2.getNetworkInfo();
+      });
+    } }, { key: "getLocation", value: function getLocation()
+
+    {var _this3 = this;
+      if (statConfig.getLocation) {
+        uni.getLocation({
+          type: 'wgs84',
+          geocode: true,
+          success: function success(result) {
+            if (result.address) {
+              _this3.statData.cn = result.address.country;
+              _this3.statData.pn = result.address.province;
+              _this3.statData.ct = result.address.city;
+            }
+
+            _this3.statData.lat = result.latitude;
+            _this3.statData.lng = result.longitude;
+            _this3.request(_this3.statData);
+          } });
+
+      } else {
+        this.statData.lat = 0;
+        this.statData.lng = 0;
+        this.request(this.statData);
+      }
+    } }, { key: "request", value: function request(
+
+    data, type) {var _this4 = this;
+      var time = getTime();
+      var title = this._navigationBarTitle;
+      data.ttn = title.page;
+      data.ttpj = title.config;
+      data.ttc = title.report;
+
+      var requestData = this._reportingRequestData;
+      if (getPlatformName() === 'n') {
+        requestData = uni.getStorageSync('__UNI__STAT__DATA') || {};
+      }
+      if (!requestData[data.lt]) {
+        requestData[data.lt] = [];
+      }
+      requestData[data.lt].push(data);
+
+      if (getPlatformName() === 'n') {
+        uni.setStorageSync('__UNI__STAT__DATA', requestData);
+      }
+      if (getPageResidenceTime() < OPERATING_TIME && !type) {
+        return;
+      }
+      var uniStatData = this._reportingRequestData;
+      if (getPlatformName() === 'n') {
+        uniStatData = uni.getStorageSync('__UNI__STAT__DATA');
+      }
+      // 时间超过，重新获取时间戳
+      setPageResidenceTime();
+      var firstArr = [];
+      var contentArr = [];
+      var lastArr = [];var _loop = function _loop(
+
+      i) {
+        var rd = uniStatData[i];
+        rd.forEach(function (elm) {
+          var newData = getSplicing(elm);
+          if (i === 0) {
+            firstArr.push(newData);
+          } else if (i === 3) {
+            lastArr.push(newData);
+          } else {
+            contentArr.push(newData);
+          }
+        });};for (var i in uniStatData) {_loop(i);
+      }
+
+      firstArr.push.apply(firstArr, contentArr.concat(lastArr));
+      var optionsData = {
+        usv: STAT_VERSION, //统计 SDK 版本号
+        t: time, //发送请求时的时间戮
+        requests: JSON.stringify(firstArr) };
+
+
+      this._reportingRequestData = {};
+      if (getPlatformName() === 'n') {
+        uni.removeStorageSync('__UNI__STAT__DATA');
+      }
+
+      if (data.ut === 'h5') {
+        this.imageRequest(optionsData);
+        return;
+      }
+
+      if (getPlatformName() === 'n' && this.statData.p === 'a') {
+        setTimeout(function () {
+          _this4._sendRequest(optionsData);
+        }, 200);
+        return;
+      }
+      this._sendRequest(optionsData);
+    } }, { key: "_sendRequest", value: function _sendRequest(
+    optionsData) {var _this5 = this;
+      uni.request({
+        url: STAT_URL,
+        method: 'POST',
+        // header: {
+        //   'content-type': 'application/json' // 默认值
+        // },
+        data: optionsData,
+        success: function success() {
+          // if (process.env.NODE_ENV === 'development') {
+          //   console.log('stat request success');
+          // }
+        },
+        fail: function fail(e) {
+          if (++_this5._retry < 3) {
+            setTimeout(function () {
+              _this5._sendRequest(optionsData);
+            }, 1000);
+          }
+        } });
+
+    }
+    /**
+       * h5 请求
+       */ }, { key: "imageRequest", value: function imageRequest(
+    data) {
+      var image = new Image();
+      var options = getSgin(GetEncodeURIComponentOptions(data)).options;
+      image.src = STAT_H5_URL + '?' + options;
+    } }, { key: "sendEvent", value: function sendEvent(
+
+    key, value) {
+      // 校验 type 参数
+      if (calibration(key, value)) return;
+
+      if (key === 'title') {
+        this._navigationBarTitle.report = value;
+        return;
+      }
+      this._sendEventRequest({
+        key: key,
+        value: typeof value === 'object' ? JSON.stringify(value) : value },
+      1);
+    } }]);return Util;}();var
+
+
+
+Stat = /*#__PURE__*/function (_Util) {_inherits(Stat, _Util);_createClass(Stat, null, [{ key: "getInstance", value: function getInstance()
+    {
+      if (!this.instance) {
+        this.instance = new Stat();
+      }
+      return this.instance;
+    } }]);
+  function Stat() {var _this6;_classCallCheck(this, Stat);
+    _this6 = _possibleConstructorReturn(this, _getPrototypeOf(Stat).call(this));
+    _this6.instance = null;
+    // 注册拦截器
+    if (typeof uni.addInterceptor === 'function' && "development" !== 'development') {
+      _this6.addInterceptorInit();
+      _this6.interceptLogin();
+      _this6.interceptShare(true);
+      _this6.interceptRequestPayment();
+    }return _this6;
+  }_createClass(Stat, [{ key: "addInterceptorInit", value: function addInterceptorInit()
+
+    {
+      var self = this;
+      uni.addInterceptor('setNavigationBarTitle', {
+        invoke: function invoke(args) {
+          self._navigationBarTitle.page = args.title;
+        } });
+
+    } }, { key: "interceptLogin", value: function interceptLogin()
+
+    {
+      var self = this;
+      uni.addInterceptor('login', {
+        complete: function complete() {
+          self._login();
+        } });
+
+    } }, { key: "interceptShare", value: function interceptShare(
+
+    type) {
+      var self = this;
+      if (!type) {
+        self._share();
+        return;
+      }
+      uni.addInterceptor('share', {
+        success: function success() {
+          self._share();
+        },
+        fail: function fail() {
+          self._share();
+        } });
+
+    } }, { key: "interceptRequestPayment", value: function interceptRequestPayment()
+
+    {
+      var self = this;
+      uni.addInterceptor('requestPayment', {
+        success: function success() {
+          self._payment('pay_success');
+        },
+        fail: function fail() {
+          self._payment('pay_fail');
+        } });
+
+    } }, { key: "report", value: function report(
+
+    options, self) {
+      this.self = self;
+      // if (process.env.NODE_ENV === 'development') {
+      //   console.log('report init');
+      // }
+      setPageResidenceTime();
+      this.__licationShow = true;
+      this._sendReportRequest(options, true);
+    } }, { key: "load", value: function load(
+
+    options, self) {
+      if (!self.$scope && !self.$mp) {
+        var page = getCurrentPages();
+        self.$scope = page[page.length - 1];
+      }
+      this.self = self;
+      this._query = options;
+    } }, { key: "show", value: function show(
+
+    self) {
+      this.self = self;
+      if (getPageTypes(self)) {
+        this._pageShow(self);
+      } else {
+        this._applicationShow(self);
+      }
+    } }, { key: "ready", value: function ready(
+
+    self) {
+      // this.self = self;
+      // if (getPageTypes(self)) {
+      //   this._pageShow(self);
+      // }
+    } }, { key: "hide", value: function hide(
+    self) {
+      this.self = self;
+      if (getPageTypes(self)) {
+        this._pageHide(self);
+      } else {
+        this._applicationHide(self, true);
+      }
+    } }, { key: "error", value: function error(
+    em) {
+      if (this._platform === 'devtools') {
+        if (true) {
+          console.info('当前运行环境为开发者工具，不上报数据。');
+        }
+        // return;
+      }
+      var emVal = '';
+      if (!em.message) {
+        emVal = JSON.stringify(em);
+      } else {
+        emVal = em.stack;
+      }
+      var options = {
+        ak: this.statData.ak,
+        uuid: this.statData.uuid,
+        lt: '31',
+        ut: this.statData.ut,
+        ch: this.statData.ch,
+        mpsdk: this.statData.mpsdk,
+        mpv: this.statData.mpv,
+        v: this.statData.v,
+        em: emVal,
+        usv: this.statData.usv,
+        t: getTime(),
+        p: this.statData.p };
+
+      this.request(options);
+    } }]);return Stat;}(Util);
+
+
+var stat = Stat.getInstance();
+var isHide = false;
+var lifecycle = {
+  onLaunch: function onLaunch(options) {
+    stat.report(options, this);
+  },
+  onReady: function onReady() {
+    stat.ready(this);
+  },
+  onLoad: function onLoad(options) {
+    stat.load(options, this);
+    // 重写分享，获取分享上报事件
+    if (this.$scope && this.$scope.onShareAppMessage) {
+      var oldShareAppMessage = this.$scope.onShareAppMessage;
+      this.$scope.onShareAppMessage = function (options) {
+        stat.interceptShare(false);
+        return oldShareAppMessage.call(this, options);
+      };
+    }
+  },
+  onShow: function onShow() {
+    isHide = false;
+    stat.show(this);
+  },
+  onHide: function onHide() {
+    isHide = true;
+    stat.hide(this);
+  },
+  onUnload: function onUnload() {
+    if (isHide) {
+      isHide = false;
+      return;
+    }
+    stat.hide(this);
+  },
+  onError: function onError(e) {
+    stat.error(e);
+  } };
+
+
+function main() {
+  if (true) {
+    uni.report = function (type, options) {};
+  } else { var Vue; }
+}
+
+main();
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 6 */
+/*!******************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-stat/package.json ***!
+  \******************************************************/
+/*! exports provided: _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _shasum, _spec, _where, author, bugs, bundleDependencies, deprecated, description, devDependencies, files, gitHead, homepage, license, main, name, repository, scripts, version, default */
+/***/ (function(module) {
+
+module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.0.0-24220191115004","_inBundle":false,"_integrity":"sha512-UKnpiHSP7h9c5IFpJFkWkpm1KyWz9iHj1hchrQSUxPhChx+KPOmunnQcKGiQvvBz9CeSi7Se/eauJYha5ch0kw==","_location":"/@dcloudio/uni-stat","_phantomChildren":{},"_requested":{"type":"tag","registry":true,"raw":"@dcloudio/uni-stat@next","name":"@dcloudio/uni-stat","escapedName":"@dcloudio%2funi-stat","scope":"@dcloudio","rawSpec":"next","saveSpec":null,"fetchSpec":"next"},"_requiredBy":["#USER","/","/@dcloudio/vue-cli-plugin-uni"],"_resolved":"https://registry.npmjs.org/@dcloudio/uni-stat/-/uni-stat-2.0.0-24220191115004.tgz","_shasum":"5848f2204f37daaf8c340fb27d9f76b16fcbfdeb","_spec":"@dcloudio/uni-stat@next","_where":"/Users/guoshengqiang/Documents/dcloud-plugins/release/uniapp-cli","author":"","bugs":{"url":"https://github.com/dcloudio/uni-app/issues"},"bundleDependencies":false,"deprecated":false,"description":"","devDependencies":{"@babel/core":"^7.5.5","@babel/preset-env":"^7.5.5","eslint":"^6.1.0","rollup":"^1.19.3","rollup-plugin-babel":"^4.3.3","rollup-plugin-clear":"^2.0.7","rollup-plugin-commonjs":"^10.0.2","rollup-plugin-copy":"^3.1.0","rollup-plugin-eslint":"^7.0.0","rollup-plugin-json":"^4.0.0","rollup-plugin-node-resolve":"^5.2.0","rollup-plugin-replace":"^2.2.0","rollup-plugin-uglify":"^6.0.2"},"files":["dist","package.json","LICENSE"],"gitHead":"bcf65737c5111d47398695d3db8ed87305df346e","homepage":"https://github.com/dcloudio/uni-app#readme","license":"Apache-2.0","main":"dist/index.js","name":"@dcloudio/uni-stat","repository":{"type":"git","url":"git+https://github.com/dcloudio/uni-app.git","directory":"packages/uni-stat"},"scripts":{"build":"NODE_ENV=production rollup -c rollup.config.js","dev":"NODE_ENV=development rollup -w -c rollup.config.js"},"version":"2.0.0-24220191115004"};
+
+/***/ }),
+/* 7 */
+/*!*********************************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/pages.json?{"type":"style"} ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "点餐系统" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "点餐系统", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+
+/***/ }),
+/* 8 */
+/*!********************************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/pages.json?{"type":"stat"} ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__107B921" };exports.default = _default;
+
+/***/ }),
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */
 /*!********************************************************************!*\
   !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
   \********************************************************************/
@@ -8172,8 +8540,27 @@ function normalizeComponent (
 
 
 /***/ }),
+/* 15 */
+/*!********************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/store/index.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ "./node_modules/vuex/dist/vuex.esm.js":
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 16));
+
+var _modules = _interopRequireDefault(__webpack_require__(/*! ./modules */ 17));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+_vue.default.use(_vuex.default);var _default =
+
+new _vuex.default.Store({
+  modules: _modules.default,
+  strict: "development" !== 'production' });exports.default = _default;
+
+/***/ }),
+/* 16 */
 /*!********************************************!*\
   !*** ./node_modules/vuex/dist/vuex.esm.js ***!
   \********************************************/
@@ -9123,37 +9510,986 @@ var index_esm = {
 
 
 /***/ }),
+/* 17 */
+/*!****************************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/store/modules/index.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ "./node_modules/webpack/buildin/global.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
+                                                                                                      * The file enables `@/store/index.js` to import all vuex modules
+                                                                                                      * in a one-shot manner. There should not be any reason to edit this file.
+                                                                                                      */
+
+var files = __webpack_require__(18);
+var modules = {};
+
+files.keys().forEach(function (key) {
+  if (key === './index.js') return;
+  modules[key.replace(/(\.\/|\.js)/g, '')] = files(key).default;
+});var _default =
+
+modules;exports.default = _default;
+
+/***/ }),
+/* 18 */
+/*!*******************************************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/store/modules sync nonrecursive \.js$ ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./index.js": 17
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 18;
+
+/***/ }),
+/* 19 */
+/*!*********************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/config/index.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _httpConfig = _interopRequireDefault(__webpack_require__(/*! ./httpConfig */ 20));
+var _wsConf = _interopRequireDefault(__webpack_require__(/*! ./wsConf */ 21));
+var _fileConfig = _interopRequireDefault(__webpack_require__(/*! ./fileConfig.js */ 22));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+
+{
+  httpConfig: _httpConfig.default,
+  wsConf: _wsConf.default,
+  fileConfig: _fileConfig.default };exports.default = _default;
+
+/***/ }),
+/* 20 */
+/*!**************************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/config/httpConfig.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var baseUrl = 'http://192.168.0.125:8080';var _default =
+{
+  baseUrl: baseUrl };exports.default = _default;
+
+/***/ }),
+/* 21 */
+/*!**********************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/config/wsConf.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var baseUrl = 'ws://192.168.0.117:7022/web?';var _default =
+
+{
+  baseUrl: baseUrl };exports.default = _default;
+
+/***/ }),
+/* 22 */
+/*!**************************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/config/fileConfig.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // const baseUrl = 'http://39.98.184.99/static/pictures/htd'
+var baseUrl = 'http://39.98.184.99/static';var _default =
+{
+  baseUrl: baseUrl };exports.default = _default;
+
+/***/ }),
+/* 23 */
+/*!**********************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/service/index.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _modules = _interopRequireDefault(__webpack_require__(/*! ./modules */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+
+_modules.default;exports.default = _default;
+
+/***/ }),
+/* 24 */
+/*!******************************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/service/modules/index.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
+                                                                                                      * The file enables `@/store/index.js` to import all vuex modules
+                                                                                                      * in a one-shot manner. There should not be any reason to edit this file.
+                                                                                                      */
+
+var files = __webpack_require__(25);
+var modules = {};
+
+files.keys().forEach(function (key) {
+  if (key === './index.js') return;
+  modules[key.replace(/(\.\/|\.js)/g, '')] = files(key).default;
+});var _default =
+
+modules;exports.default = _default;
+
+/***/ }),
+/* 25 */
+/*!*********************************************************************************************!*\
+  !*** C:/Users/11815/Documents/sullayxxx/点餐系统/phone/service/modules sync nonrecursive \.js$ ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./index.js": 24
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 25;
+
+/***/ }),
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! regenerator-runtime */ 33);
+
+
+/***/ }),
+/* 33 */
+/*!************************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+// This method of obtaining a reference to the global object needs to be
+// kept identical to the way it is obtained in runtime.js
+var g = (function() {
+  return this || (typeof self === "object" && self);
+})() || Function("return this")();
+
+// Use `getOwnPropertyNames` because not all browsers support calling
+// `hasOwnProperty` on the global `self` object in a worker. See #183.
+var hadRuntime = g.regeneratorRuntime &&
+  Object.getOwnPropertyNames(g).indexOf("regeneratorRuntime") >= 0;
+
+// Save the old regeneratorRuntime in case it needs to be restored later.
+var oldRuntime = hadRuntime && g.regeneratorRuntime;
+
+// Force reevalutation of runtime.js.
+g.regeneratorRuntime = undefined;
+
+module.exports = __webpack_require__(/*! ./runtime */ 34);
+
+if (hadRuntime) {
+  // Restore the original runtime.
+  g.regeneratorRuntime = oldRuntime;
+} else {
+  // Remove the global property added by runtime.js.
+  try {
+    delete g.regeneratorRuntime;
+  } catch(e) {
+    g.regeneratorRuntime = undefined;
+  }
+}
+
+
+/***/ }),
+/* 34 */
+/*!*****************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var g;
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
+!(function(global) {
+  "use strict";
 
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
 
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
+  var inModule = typeof module === "object";
+  var runtime = global.regeneratorRuntime;
+  if (runtime) {
+    if (inModule) {
+      // If regeneratorRuntime is defined globally and we're in a module,
+      // make the exports object identical to regeneratorRuntime.
+      module.exports = runtime;
+    }
+    // Don't bother evaluating the rest of this file if the runtime was
+    // already defined globally.
+    return;
+  }
 
-module.exports = g;
+  // Define the runtime globally (as expected by generated code) as either
+  // module.exports (if we're in a module) or a new, empty object.
+  runtime = global.regeneratorRuntime = inModule ? module.exports : {};
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  runtime.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  IteratorPrototype[iteratorSymbol] = function () {
+    return this;
+  };
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunctionPrototype[toStringTagSymbol] =
+    GeneratorFunction.displayName = "GeneratorFunction";
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      prototype[method] = function(arg) {
+        return this._invoke(method, arg);
+      };
+    });
+  }
+
+  runtime.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  runtime.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      if (!(toStringTagSymbol in genFun)) {
+        genFun[toStringTagSymbol] = "GeneratorFunction";
+      }
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  runtime.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return Promise.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return Promise.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new Promise(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+    return this;
+  };
+  runtime.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  runtime.async = function(innerFn, outerFn, self, tryLocsList) {
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList)
+    );
+
+    return runtime.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        if (delegate.iterator.return) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  Gp[toStringTagSymbol] = "Generator";
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  Gp[iteratorSymbol] = function() {
+    return this;
+  };
+
+  Gp.toString = function() {
+    return "[object Generator]";
+  };
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  runtime.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  runtime.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+})(
+  // In sloppy mode, unbound `this` refers to the global object, fallback to
+  // Function constructor if we're in global strict mode. That is sadly a form
+  // of indirect eval which violates Content Security Policy.
+  (function() {
+    return this || (typeof self === "object" && self);
+  })() || Function("return this")()
+);
 
 
 /***/ })
-
-}]);
+]]);
 //# sourceMappingURL=../../.sourcemap/mp-weixin/common/vendor.js.map

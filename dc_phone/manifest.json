@@ -1,5 +1,5 @@
 {
-    "name" : "faceTest",
+    "name" : "点餐系统",
     "appid" : "__UNI__107B921",
     "description" : "",
     "versionName" : "1.0.0",
@@ -64,7 +64,7 @@
     /* 快应用特有相关 */
     "mp-weixin" : {
         /* 小程序特有相关 */
-        "appid" : "wxa4245cfc5a47e682",
+        "appid" : "wxc7de010ee08b5fe2",
         "setting" : {
             "urlCheck" : false,
             "postcss" : true,

@@ -1,5 +1,5 @@
 
-.app{
+.app {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,7 +19,7 @@
           justify-content: center;
   height: 1000rpx;
 }
-.restaurantList{
+.restaurantList {
   background: #f6f8fa;
   width: 700rpx;
   display: -webkit-box;
@@ -35,7 +35,7 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.restaurant{
+.restaurant {
   width: 204rpx;
   height: 136rpx;
   display: -webkit-box;
@@ -59,31 +59,31 @@
   border-radius: 10rpx;
   border: 3rpx solid #F80;
   animation: namemf 1s linear infinite alternate;
-  -webkit-animation:namemf 3s linear infinite alternate;
+  -webkit-animation: namemf 3s linear infinite alternate;
   background: #f2f8fe;
 }
-@-webkit-keyframes namemf{
-from{
+@-webkit-keyframes namemf {
+from {
     border: 3rpx solid #F80;
 }
-to{
-    border:3rpx solid #2ED;
+to {
+    border: 3rpx solid #2ED;
 }
 }
-@keyframes namemf{
-from{
+@keyframes namemf {
+from {
     border: 3rpx solid #F80;
 }
-to{
-    border:3rpx solid #2ED;
+to {
+    border: 3rpx solid #2ED;
 }
 }
-.active{
+.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#FEAC5E), to(#4BC0C8));
   background: -o-linear-gradient(bottom, #FEAC5E, #4BC0C8);
   background: linear-gradient(to top, #FEAC5E, #4BC0C8);
 }
-.top{
+.top {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -95,7 +95,7 @@ to{
           flex-direction: row;
   width: 100%;
 }
-.bottom{
+.bottom {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -107,7 +107,7 @@ to{
           flex-direction: row-reverse;
   width: 100%;
 }
-.middle{
+.middle {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -119,7 +119,7 @@ to{
           flex-direction: row;
   width: 100%;
 }
-.run_btn{
+.run_btn {
   width: 210rpx;
   height: 142rpx;
   display: -webkit-box;
@@ -141,10 +141,12 @@ to{
           justify-content: center;
   margin: 20rpx;
 }
-.run_btn:hover,.run_btn:focus,.run_btn:active{
+.run_btn:hover,
+.run_btn:focus,
+.run_btn:active {
   cursor: pointer;
 }
-.run_btn view{
+.run_btn view {
   height: 150rpx;
   width: 150rpx;
   background: -webkit-gradient(linear, left bottom, left top, from(#FEAC5E), to(#4BC0C8));
