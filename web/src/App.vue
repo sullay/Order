@@ -23,7 +23,7 @@ export default {
   data () {
     return {
       // restaurantList: ['腌面', '兰州', '汤饭', '华莱士(假)', '炒菜', '好奇', '楚涛', '金伟'],
-      restaurantList: ['外卖', '出去吃', '外卖', '出去吃', '外卖', '出去吃', '外卖', '出去吃'],
+      restaurantList: ['兰州拉面', '肯德基', '德克士', '酸菜鱼', '盖浇饭', '米线', '小炒肉', '再来一次'],
       selected: 0,
       isActive: false
     }
