@@ -42,6 +42,9 @@
       }
     },
     onLoad() {
+      while (this.restaurantList.length < 8) {
+        this.restaurantList.push('再来一次')
+      }
       this.restaurantList.sort(this.randomsort)
     },
     onReady() {
