@@ -13,5 +13,33 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*每个页面公共css */
+:not(not_all) {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 

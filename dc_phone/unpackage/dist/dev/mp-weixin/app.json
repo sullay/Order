@@ -5,10 +5,10 @@
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "点餐系统",
+    "navigationBarTitleText": "食了咩",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap0.json"
+  "sitemapLocation": "sitemap32.json"
 }
