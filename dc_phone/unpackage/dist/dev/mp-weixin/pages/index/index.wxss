@@ -1,20 +1,16 @@
 .app {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
           justify-content: center;
   height: 1000rpx;
 }
@@ -31,20 +27,16 @@
 .app .restaurantList .restaurant {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
-      -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
           justify-content: center;
   border-radius: 10rpx;
   border: 3rpx solid #F80;
@@ -71,32 +63,25 @@
   grid-area: r8;
 }
 .app .restaurantList .active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#FEAC5E), to(#4BC0C8));
-  background: -o-linear-gradient(bottom, #FEAC5E, #4BC0C8);
+  background: -webkit-linear-gradient(bottom, #FEAC5E, #4BC0C8);
   background: linear-gradient(to top, #FEAC5E, #4BC0C8);
 }
 .app .restaurantList .run_btn {
   grid-area: b;
   width: 150rpx;
   height: 150rpx;
-  background: -webkit-gradient(linear, left bottom, left top, from(#FEAC5E), to(#4BC0C8));
-  background: -o-linear-gradient(bottom, #FEAC5E, #4BC0C8);
+  background: -webkit-linear-gradient(bottom, #FEAC5E, #4BC0C8);
   background: linear-gradient(to top, #FEAC5E, #4BC0C8);
   justify-self: center;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  align-self: center;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
   color: white;

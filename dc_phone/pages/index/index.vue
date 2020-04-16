@@ -3,7 +3,7 @@
     <view class="restaurantList">
       <view v-for="(item,index) in restaurantList" :key="index" :class="index==selected?'restaurant active':'restaurant'">
         <!-- {{item}} -->
-        <input type="text" :value="item" @change="edit(index,$event)" confirm-type="done" />
+        <input type="text" :value="item" @change="edit(index,$event)" confirm-type="done" :disabled="item==='瑞幸咖啡'" />
       </view>
       <view class="run_btn" @click="_run">
         启动
@@ -16,7 +16,7 @@
   export default {
     data() {
       return {
-        restaurantList: ['兰州拉面', '肯德基', '德克士', '酸菜鱼', '盖浇饭', '米线', '小炒肉', '再来一次'],
+        restaurantList: ['瑞幸咖啡', '肯德基', '德克士', '酸菜鱼', '盖浇饭', '米线', '小炒肉', '再来一次'],
         selected: 0,
         isActive: false
       }
@@ -30,6 +30,12 @@
       let tempList = uni.getStorageSync('list')
       if (tempList && tempList.length > 0) {
         this.restaurantList = tempList
+      }
+      if (this.restaurantList.indexOf("瑞幸咖啡") < 0) {
+        this.restaurantList[0] = '瑞幸咖啡'
+      }
+      if (this.restaurantList.length > 8) {
+        this.restaurantList = this.restaurantList.slice(0, 8)
       }
       while (this.restaurantList.length < 8) {
         this.restaurantList.push('再来一次')
@@ -67,6 +73,12 @@
         }
         this.selected = i % this.restaurantList.length
         this.isActive = false
+        console.log(this.restaurantList[this.selected])
+        if (this.restaurantList[this.selected]==='瑞幸咖啡') {
+          uni.navigateToMiniProgram({
+            appId: 'wx21c7506e98a2fe75'
+          })
+        }
       },
       edit(i, event) {
         this.restaurantList[i] = event.detail.value
